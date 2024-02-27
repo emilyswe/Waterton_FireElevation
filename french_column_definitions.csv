@@ -1,0 +1,101 @@
+﻿column_name_english,column_name_french,description_french
+abundance,abondance,"Abondance des espèces étiquetées; 0 - 10, TMTT (trop nombreuses pour être étiquetées) ou CI1, CI2, CI3 pour les amphibiens"
+scientific_name,nom_scientifique,"Classification binomiale (genre, espèces) des espèces"
+confidence,confiance,"Niveau de confiance envers l’étiquette définie (certaine, à vérifier, inconnue - imprécise)"
+hourly_weather_station_distance,distance_station_météorologique_horaire,Distance de la station météorologique la plus près qui extrait les données météorologiques horaires (en kilomètres)
+daily_weather_station_distance,distance_station_météorologique_quotidienne,Distance de la station météorologique la plus près qui extrait les données météorologiques quotidiennes (en kilomètres)
+daily_weather_station_elevation,élévation_station_météorologique_quotidienne,Élévation de la station météorologique la plus près qui extrait les données météorologiques quotidiennes (en mètres)
+hourly_weather_station_elevation,élévation_station_météorologique_horaire,Élévation de la station météorologique la plus près qui extrait les données météorologiques horaires (en mètres)
+hide_location,visibilité_emplacement,Est-ce que l'emplacement est non visible?
+latitude,latitude,Latitude
+longitude,longitude,Longitude
+method,méthode,Méthode de traitement de l’enregistrement
+daily_weather_station_nm,nom_station_météorologique_quotidienne,Nom de la station météorologique la plus près qui extrait les données météorologiques quotidiennes
+hourly_weather_station_nm,nom_station météorologique_horaire,Nom de la station météorologique la plus près qui extrait les données météorologiques horaires
+organization,organisation,Acronyme de l’organisation à qui appartiennent les données
+buffer,rayon_zone_tampon_m,Rayon de la zone tampon autour de l’emplacement (en mètres)
+species_code,code_espèce,Code des espèces (code abrégé de quatre lettres de l’American Ornithological Society attribué aux espèces aux fins d’étiquetage par les enregistreurs autonomes
+hourly_precipitation_mm,précipitations_horaire,Accumulation de neige quotidienne (en centimètres) enregistrée à la station météorologique la plus près
+daily_snow_on_ground_cm,accumulation_neige_quotidienne_cm,Accumulation de neige quotidienne (en centimètres) enregistrée à la station météorologique la plus près
+daily_max_temp,température_maximale_quotidienne,Température maximale quotidienne enregistrée à la station météorologique la plus près
+daily_mean_temp,température_moyenne_quotidienne,Température moyenne quotidienne enregistrée à la station météorologique la plus près
+daily_min_temp,température_minimale_quotidienne,Température minimale quotidienne enregistrée à la station météorologique la plus près
+daily_precipitation_mm,précipitations_quotidiennes_mm,Précipitations quotidiennes (en millimètres) enregistrées à la station météorologique la plus près
+daily_total_rain_mm,chute_pluie_totale_quotidienne_mm,Chute de pluie totale quotidienne (en millimètres) enregistrée à la station météorologique la plus près
+daily_total_snow_cm,chute_neige_totale_quotidienne_cm,Chute de neige totale quotidienne (en centimètres) enregistrée à la station météorologique la plus près
+recording_date,date_enregistrement,Date de l’enregistrement (AAAA-MM-JJ)
+hourly_weather_attributes,attributs_horaires_température,Description de la température horaire à l’heure la plus près. Options possibles :
+hourly_dew_point,point_rosée_horaire,Point de rosée (en Celsius) enregistré à la station météorologique la plus près à l’heure la plus près
+hourly_humidex,humidex_horaire,Humidex ou indice d’humidité (en Celsius) qui mesure la sensation qu’éprouve la personne moyenne par temps très chaud en fonction de l’humidité et de la température enregistrées à la station météorologique la plus près à l’heure la plus près
+equipment_used,,
+observer,observateur,Observateur qui effectue l’enquête
+location,emplacement,Endroit physique dans le paysage où les données ont été recueillies
+hourly_rel_humidity,humidité_horaire_relative,Humidité relative (calculée en pourcentage de la concentration d’eau présente dans l’air) enregistrée à la station météorologique la plus près à l’heure la plus près
+hourly_temp,température_horaire,Température (en Celsius) enregistrée à la station météorologique la plus près à l’heure la plus près
+hourly_visibility_km,visibilité_horaire_km,Visibilité (en kilomètres) enregistrée à la station météorologique à l’heure la plus près
+hourly_wind_direction,direction_vent_horaire,Direction du vent (en degrés) enregistrée à la station météorologique la plus près à l’heure la plus près
+hourly_wind_chill,refroidissement_éolien_horaire,Refroidissement éolien ou baisse de température causés par la vitesse du vent et la température de l’air (mesurée en Celsius) enregistré à la station météorologique la plus près à l’heure la plus près
+audio_length,,
+clip_channel_used,,
+hourly_wind_speed,vitesse_vent_horaire,Vitesse du vent (en kilomètres/heure) enregistrée à la station météorologique la plus près à l’heure la plus près
+hourly_station_pressure,pression_atmosphérique_horaire,Pression atmosphérique (en kilopascals) enregistrée à la station météorologique la plus près à l’heure la plus près
+is_verified,étiquette_verifiée,"Si VRAI, l'étiquette fut vérifiée"
+land_features,éléments_de_paysage,Une liste délimitée par virgules des éléments du paysage autour du site
+left_dc_offset,décalage_cc_canal_gauche,Décalage cc sur le canal gauche de l'enregistrement
+left_freq_filter_tag_dc_offset,décalage_cc_étiquette_canal_gauche,Décalage cc du canal gauche de l'étiquette
+left_freq_filter_tag_max_level,dBFS_maximale_étiquette_canal_gauche,dB FS maximale du canal gauche de l'étiquette
+left_freq_filter_tag_min_level,dBFS_minimale_étiquette_canal_gauche,dB FS minimale du canal gauche de l'étiquette
+left_freq_filter_tag_peak_level_dbfs,moyenne_quadratique_maximale_sommets_égalisés_dBFS_étiquette_canal_gauche,Moyenne quadratique des sommets égalisés de dB FS de l'étiquette sur le canal gauche
+left_freq_filter_tag_pk_count,nombre_sommets_dBFS_étiquette_canal_gauche,Nombre de sommets de dB FS sur le canal gauche de l'étiquette
+left_freq_filter_tag_rms_peak_dbfs,moyenne_quadratique_dBFS_maximale_étiquette_canal_gauche,Moyenne quadratique maximale du dB FS sur le canal gauche
+left_freq_filter_tag_rms_trough_dbfs,moyenne_quadratique_minimale_dBFS_étiquette_canal_gauche,Moyenne quadratique minimale du dB FS de l'étiquette sur le canal gauche
+left_full_freq_tag_dc_offset,décalage_cc_étiquette_freq_complet_canal_gauche,Décalage cc du canal gauche de toute les bandes de fréquence délimitée par la durée de l'étiquette
+left_full_freq_tag_max_level,dBFS_maximale_étiquette_freq_complet_canal_gauche,dB FS maximale du canal gauche de toute les bandes de fréquence délimitée par la durée de l'étiquette
+left_full_freq_tag_min_level,dBFS_minimale_étiquette_freq_complet_canal_gauche,dB FS minimale du canal gauche de toute les bandes de fréquence délimitée par la durée de l'étiquette
+left_full_freq_tag_peak_level_dbfs,dBFS_maximale_égalisé_étiquette_fréq_complet_canal_gauche,Nombre de sommets maximale égalisés de dB FS du canal gauche de toute les bandes de fréquence délimitée par la durée de l'étiquette
+left_full_freq_tag_pk_count,nombre_sommets_dBFS_étiquette_fréq_complet_canal_gauche,Nombre de sommets de dB FS du canal gauche de toute les bandes de fréquence délimitée par la durée de l'étiquette
+left_full_freq_tag_rms_peak_dbfs,moyenne_quadratique_maximale_dBFS_étiquette_fréq_complet_canal_gauche,Moyenne quadratique maximale du dB FS du canal gauche de toute les bandes fréquence délimitée par la durée de l'étiquette
+left_full_freq_tag_rms_trough_dbfs,moyenne_quadratique_minimale_dBFS_étiquette_fréq_complet_canal_gauche,Moyenne quadratique minimale du dB FS du canal gauche de toutes les bandes de fréquence délimitée par la durée de l'étiquette
+left_max_level,dBFS_maximale_canal_gauche,dB FS maximale sur le canal gauche de l'enregistrement
+left_min_level,dBFS_minimale_canal_gauche,dB FS minimale sur le canal gauche de l'enregistrement
+left_pk_count,nombre_sommets_canal_gauche,Nombre de sommets sur le canal gauche de l'enregistrement
+left_rms_peak_dbfs,moyenne_quadratique_maximale_dBFS_canal_gauche,Moyenne quadratique maximale du dB FS sur le canal gauche de l'enregistrement
+left_rms_peak_level_dbfs,moyenne_quadratique_maximale_égalisé_dBFS_canal_gauche,Moyenne quadratique maximale égalisé du dB FS sur le canal gauche de l'enregistrement
+left_rms_trough_dbfs,moyenne_quadratique_minimale_dBFS_canal_gauche,Moyenne quadratique minimale du dB FS sur le canal gauche
+max_tag_freq,fréq_max_étiquette,La fréquence maximale de l'étiquette (en kilohertz)
+min_tag_freq,fréq_min_étiquette,La fréquence minimale de l'étiquette (en kilohertz)
+project_name,nom_du_projet,Le nom complet du projet
+right_dc_offset,décalage_cc_canal_droit,Décalage cc sur le canal droit de l'enregistrement
+right_freq_filter_tag_dc_offset,décalage_cc_étiquette_canal_droit,Décalage cc du canal droit de l'étiquette
+right_freq_filter_tag_max_level,dBFS_maximale_étiquette_canal_droit,dB FS maximale du canal droit de l'étiquette
+right_freq_filter_tag_min_level,dBFS_minimale_étiquette_canal_droit,dB FS minimale du canal droit de l'étiquette
+right_freq_filter_tag_peak_level_dbfs,moyenne_quadratique_maximale_égalisé_dBFS_étiquette_canal_droit,Moyenne quadratique maximale égalisé du dB FS sur le canal droit de l'étiquette
+right_freq_filter_tag_pk_count,nombre_sommets_dBFS_étiquette_canal_droit,Nombre de sommets de dB FS sur le canal droit de l'étiquette
+right_freq_filter_tag_rms_peak_dbfs,moyenne_quadratique_dBFS_maximale_étiquette_canal_droit,Moyenne quadratique maximale du dB FS sur le canal droit
+right_freq_filter_tag_rms_trough_dbfs,moyenne_quadratique_minimale_dBFS_étiquette_canal_droit,Moyenne quadratique minimale du dB FS de l'étiquette sur le canal droit
+right_full_freq_tag_dc_offset,décalage_cc_étiquette_freq_complet_canal_droit,Décalage cc du canal droit de toutes les bandes de fréquence délimitée par la durée de l'étiquette
+right_full_freq_tag_max_level,dBFS_maximale_étiquette_freq_complet_canal_droit,dB FS maximale du canal droit de toutes les bandes freéquence délimitée par la durée de l'étiquette
+right_full_freq_tag_min_level,dBFS_minimale_étiquette_freq_complet_canal_droit,dB FS minimale du canal droit de toutes les bandes freéquence délimitée par la durée de l'étiquette
+right_full_freq_tag_peak_level_dbfs,moyenne_quadratique_maximale_égalisé_dBFS_étiquette_fréq_complet_canal_droit,Nombre de sommets de dB FS du canal droit de toute les bandes de fréquence délimitée par la durée de l'étiquette
+right_full_freq_tag_pk_count,nombre_sommets_dBFS_étiquette_fréq_complet_canal_droit,Nombre de sommets de dB FS du canal droit de toute les bandes de fréquence délimitée par la durée de l'étiquette
+right_full_freq_tag_rms_peak_dbfs,moyenne_quadratique_maximale_dBFS_étiquette_fréq_complet_canal_droit,Moyenne quadratique maximale du dB FS du canal droit de toute les bandes fréquence délimitée par la durée de l'étiquette
+right_full_freq_tag_rms_trough_dbfs,moyenne_quadratique_minimale_dBFS_étiquette_fréq_complet_canal_droit,Moyenne quadratique minimale du dB FS du canal droit de toutes les bandes de fréquence délimitée par la durée de l'étiquette
+right_max_level,dBFS_maximale_canal_droit,dB FS maximale sur le canal droit de l'enregistrement
+right_min_level,dBFS_minimale_canal_droit,dB FS minimale sur le canal droit de l'enregistrement
+right_peak_level_dbfs,moyenne_quadratique_maximale_égalisé_dBFS_canal_droit,Moyenne quadratique maximale égalisé du dB FS sur le canal droit de l'enregistrement
+right_pk_count,nombre_sommets_canal_droit,Nombre de sommets sur le canal droit de l'enregistrement
+right_rms_peak_dbfs,moyenne_quadratique_maximale_dBFS_canal_droit,Moyenne quadratique maximale du dB FS sur le canal droit de la tâche
+right_rms_trough_dbfs,moyenne_quadratique_minimale_dBFS_canal_droit,Moyenne quadratique minimale du dB FS sur le canal droit
+species_comments,,
+species_common_name,,
+tag_clip_status,statut_de_préparation,"Si VRAI, l'étiquette est en mesure d'eêtre preéparée pour l'étape veérification. Veuillez"
+tag_duration_s,dureé_étiquette,La durée de l'eétiquette en secondes
+tag_start_s,étiquette_début,Temps de début de l'étiquette en secondes à partir du début de l'enregistrement
+tagged_in_wildtrax,étiqueter_dans_wildtrax,"Si VRAI, l'étiquette fut créée dans WildTrax (c-à-d pas téleéversée)"
+unique_name,nom_espèce_individus,Individus d’une espèce
+url,,
+verified_by,,
+vocalization,vocalisation,"Type de vocalisation (chant, cri, signal non vocal) de l'étiquette"
+window_end_time,fenêtre_heure_de_fin,Heure de fin de la fenêtre BirdNET de 3 secondes à partir du début de l'enregistrement
+window_start_time,fenêtre_heure_de_début,Heure de début de la fenêtre BirdNET de 3 secondes à partir du début de l'enregistrement
+comments,commentaires,Commentaires
