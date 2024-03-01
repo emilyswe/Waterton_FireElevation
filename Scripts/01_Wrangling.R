@@ -3,7 +3,6 @@
 #PC_WLNP projects have an abundance cap of 3
 
 
-
 #PREAMBLE####
 
 #1. Load library----
@@ -37,8 +36,13 @@ dat.tmtt <- wt_replace_tmtt(dat.tidy) %>%
   mutate(individual_count = as.numeric(ifelse(individual_count=="CI 1", 1, individual_count)))
 table(dat.tmtt$individual_count)
 
+#5. Remove detections after first 3 minutes----
+dat.3min <- dat.tmtt %>% 
+  dplyr::filter(detection_time <= 180) %>% 
+  mutate(task_duration = "180s")
+
 #5. Sum to abundance per species per survey
-dat.sum <- wt_make_wide(dat.tmtt) %>% 
+dat.sum <- wt_make_wide(dat.3min) %>% 
   pivot_longer(ALFL:YRWA, names_to="species", values_to="count") %>% 
   dplyr::filter(count!=0)
 
