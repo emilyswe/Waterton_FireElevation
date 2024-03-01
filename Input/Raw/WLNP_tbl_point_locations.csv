@@ -1,0 +1,147 @@
+tbl_Point_Locations,,,,,,,,,,,,,,,
+PointLocationID,ParkID,Transect,PointID,OldSiteID,YearStart,YearEnd,Active,Datum,UTM Zone,UTM Easting,UTM Northing,Elevation,Ecoregion,Comments,TransectID
+467,WLNP,Cameron Lake,1,1,2007,,Yes,NAD 83,11,716344,5433433,1668,Lower Subalpine,,7
+468,WLNP,Cameron Lake,3,3,2007,,Yes,NAD 83,11,716589,5433620,1706,Lower Subalpine,,7
+469,WLNP,Cameron Lake,4,4,2007,,Yes,NAD 83,11,716685,5433791,1729,Lower Subalpine,,7
+470,WLNP,Cameron Lake,5,5,2007,,Yes,NAD 83,11,716797,5433962,1762,Lower Subalpine,,7
+471,WLNP,Cameron Lake,6,6,2007,,Yes,NAD 83,11,716769,5433599,1804,Lower Subalpine,,7
+545,WLNP,Summit Lake,9,,2007,,Yes,NAD 83,11,716954,5433391,1891,Upper Subalpine,,8
+546,WLNP,Summit Lake,11,,2007,,Yes,NAD 83,11,717185,5433218,1962,Upper Subalpine,,8
+547,WLNP,Summit Lake,12,,2007,,Yes,NAD 83,11,717275,5433052,1969,Upper Subalpine,,8
+548,WLNP,Summit Lake,15,,2007,,Yes,NAD 83,11,717577,5432608,1958,Upper Subalpine,,8
+549,WLNP,Summit Lake,16,,2007,,Yes,NAD 83,11,717641,5432777,1962,Upper Subalpine,,8
+497,WLNP,Lower Mount Crandell,17,,2007,,No,NAD 83,12,288442,5439719,,Foothills Parkland,,1
+498,WLNP,Lower Mount Crandell,18,,2007,,Yes,NAD 83,12,288494,5439988,1306,Foothills Parkland,,1
+499,WLNP,Lower Mount Crandell,19,,2007,,Yes,NAD 83,12,288526,5440192,1325,Foothills Parkland,,1
+500,WLNP,Lower Mount Crandell,20,,2007,,Yes,NAD 83,12,288565,5440392,1339,Foothills Parkland,,1
+501,WLNP,Lower Mount Crandell,21,,2007,,Yes,NAD 83,12,288579,5440584,1340,Montane,,1
+502,WLNP,Lower Mount Crandell,22,,2007,,Yes,NAD 83,12,288726,5440730,1340,Foothills Parkland,,1
+503,WLNP,Lower Mount Crandell,23,,2007,,Yes,NAD 83,12,288844,5440846,1340,Foothills Parkland,,1
+504,WLNP,Lower Mount Crandell,24,,2007,,Yes,NAD 83,12,288888,5440989,1350,Montane,,1
+535,WLNP,Sofa Mountain,25,,2007,,Yes,NAD 83,12,296944,5438370,1555,Montane,,5
+536,WLNP,Sofa Mountain,26,,2007,,Yes,NAD 83,12,296797,5438200,1564,Montane,,5
+537,WLNP,Sofa Mountain,27,,2007,,Yes,NAD 83,12,296717,5438053,1580,Montane,,5
+538,WLNP,Sofa Mountain,28,,2007,,Yes,NAD 83,12,296710,5437884,1602,Montane,,5
+539,WLNP,Sofa Mountain,29,,2007,,Yes,NAD 83,12,296600,5437728,1625,Lower Subalpine,,5
+540,WLNP,Sofa Mountain,30,,2007,,Yes,NAD 83,12,296479,5437578,1643,Montane,,5
+541,WLNP,Sofa Mountain,31,,2007,,Yes,NAD 83,12,296472,5437383,1629,Montane,,5
+542,WLNP,Sofa Mountain,32,,2007,,Yes,NAD 83,12,296669,5437290,1628,Montane,,5
+559,WLNP,Wishbone Trail,33,,2007,,Yes,NAD 83,12,293733,5443148,1274,Foothills Parkland,,4
+560,WLNP,Wishbone Trail,34,,2007,,Yes,NAD 83,12,293665,5442989,1273,Foothills Parkland,,4
+561,WLNP,Wishbone Trail,35,,2007,,Yes,NAD 83,12,293464,5442890,1270,Foothills Parkland,,4
+562,WLNP,Wishbone Trail,36,,2007,,Yes,NAD 83,12,293491,5442681,1269,Foothills Parkland,,4
+563,WLNP,Wishbone Trail,37,,2007,,Yes,NAD 83,12,293414,5442502,1269,Foothills Parkland,,4
+564,WLNP,Wishbone Trail,38,,2007,,Yes,NAD 83,12,293288,5442331,1270,Foothills Parkland,,4
+565,WLNP,Wishbone Trail,39,,2007,,Yes,NAD 83,12,293159,5442146,1272,Foothills Parkland,,4
+566,WLNP,Wishbone Trail,40,,2007,,Yes,NAD 83,12,292997,5442031,1275,Foothills Parkland,,4
+487,WLNP,Horseshoe Basin,41,,2007,,Yes,NAD 83,12,289867,5445957,1355,Foothills Parkland,,2
+488,WLNP,Horseshoe Basin,42,,2007,,Yes,NAD 83,12,289667,5445823,1361,Foothills Parkland,,2
+489,WLNP,Horseshoe Basin,43,Pri,2007,,Yes,NAD 83,12,289511,5445893,1395,Foothills Parkland,,2
+490,WLNP,Horseshoe Basin,44,,2007,,Yes,NAD 83,12,289364,5445938,1422,Foothills Parkland,,2
+491,WLNP,Horseshoe Basin,45,,2007,,Yes,NAD 83,12,289229,5446024,1460,Montane,,2
+492,WLNP,Horseshoe Basin,46,,2007,,Yes,NAD 83,12,289209,5446189,1487,Montane,,2
+493,WLNP,Horseshoe Basin,47,,2007,,Yes,NAD 83,12,289091,5446088,1501,Montane,,2
+494,WLNP,Horseshoe Basin,48,,2007,,Yes,NAD 83,12,288904,5446042,1530,Montane,,2
+495,WLNP,Horseshoe Basin,49,,2007,,Yes,NAD 83,12,288680,5446265,1540,Montane,,2
+496,WLNP,Horseshoe Basin,50,,2007,,Yes,NAD 83,12,288392,5446353,1525,Montane,,2
+567,WLNP,Wishbone Trail,60,,2007,,Yes,NAD 83,12,292808,5441823,1270,Foothills Parkland,,4
+568,WLNP,Wishbone Trail,61,,2007,,Yes,NAD 83,12,292660,5441560,1273,Foothills Parkland,,4
+505,WLNP,Lower Mount Crandell,70,,2007,,Yes,NAD 83,12,288718,5441236,1317,Montane,,1
+506,WLNP,Lower Mount Crandell,71,,2007,,Yes,NAD 83,12,288865,5441499,1319,Montane,,1
+507,WLNP,Lower Mount Crandell,72,,2009,,Yes,NAD 83,12,289062,5441567,1311,Montane,,1
+543,WLNP,Sofa Mountain,80,,2007,,Yes,NAD 83,12,296642,5436991,1648,Montane,,5
+544,WLNP,Sofa Mountain,81,,2007,,Yes,NAD 83,12,296502,5436723,1673,Montane,,5
+461,WLNP,Akamina,90,,2008,,Yes,Nad 84,11,715947,5435002,1734,Lower Subalpine,,12
+462,WLNP,Akamina,91,,2008,,Yes,Nad 85,11,715855,5434709,1754,Lower Subalpine,,12
+463,WLNP,Akamina,92,,2008,,Yes,Nad 86,11,715666,5434475,1773,Lower Subalpine,,12
+464,WLNP,Akamina,93,,2008,,Yes,Nad 87,11,715276,543466,1786,Lower Subalpine,,12
+465,WLNP,Akamina,94,,2008,,Yes,Nad 88,11,715038,5434858,1800,Lower Subalpine,,12
+466,WLNP,Akamina,95,,2008,,Yes,Nad 89,11,714927,5435150,1831,Lower Subalpine,,12
+481,WLNP,Crandell Lake,100,,2007,2007,Yes,NAD 83,12,283455,5442377,1475,Montane,,11
+482,WLNP,Crandell Lake,101,,2007,2007,Yes,NAD 83,12,283531,5442096,1482,Montane,,11
+483,WLNP,Crandell Lake,102,,2007,2007,Yes,NAD 83,12,283392,5441834,1511,Lower Subalpine,,11
+484,WLNP,Crandell Lake,103,,2007,2007,Yes,NAD 83,12,283202,5441609,1547,Lower Subalpine,,11
+485,WLNP,Crandell Lake,104,,2007,2007,Yes,NAD 83,12,283178,5441311,1557,Lower Subalpine,,11
+486,WLNP,Crandell Lake,105,,2007,2007,Yes,NAD 83,12,283274,5441029,1580,Lower Subalpine,,11
+508,WLNP,Lower Rowe Trail,106,,2007,2007,No,NAD 83,11,716910,5438475,1787,Lower Subalpine,,10
+509,WLNP,Lower Rowe Trail,107,,2007,2007,No,NAD 83,11,,,,,,10
+510,WLNP,Lower Rowe Trail,108,,2007,2007,No,NAD 83,11,713793,5437905,,Upper Subalpine,,10
+511,WLNP,Lower Rowe Trail,109,,2007,2007,No,NAD 83,11,713579,5438173,2227,Upper Subalpine,,10
+512,WLNP,Lower Rowe Trail,110,,2007,2007,No,NAD 83,11,717367,5438517,1783,Lower Subalpine,,10
+727,WLNP,Eskerine,110,,2014,,Yes,NAD 83,12,291346,5443770,1350,Foothills Grassland,,13
+513,WLNP,Lower Rowe Trail,111,,2007,2007,No,NAD 83,11,,,,,,10
+726,WLNP,Eskerine,111,,2014,,Yes,NAD 83,12,291204,5443561,1354,Foothills Grassland,,13
+514,WLNP,Lower Rowe Trail,112,,2007,2007,No,NAD 83,11,,,,,,10
+725,WLNP,Eskerine,112,,2014,,Yes,NAD 83,12,291032,5443369,1344,Foothills Grassland,,13
+515,WLNP,Lower Rowe Trail,113,,2007,2007,No,NAD 83,11,,,,,,10
+724,WLNP,Eskerine,113,,2014,,Yes,NAD 83,12,290868,5443004,1340,Foothills Grassland,,13
+516,WLNP,Lower Rowe Trail,114,,2007,2007,No,NAD 83,11,,,,,,10
+723,WLNP,Eskerine,114,,2014,,Yes,NAD 83,12,290745,5442859,1342,Foothills Grassland,,13
+517,WLNP,Lower Rowe Trail,115,,2007,2007,No,NAD 83,11,715567,5438000,1931,Lower Subalpine,,10
+722,WLNP,Eskerine,115,,2014,,Yes,NAD 83,12,290738,5442643,1330,Foothills Grassland,,13
+518,WLNP,Lower Rowe Trail,116,,2007,2007,No,NAD 83,11,715268,5437963,1935,Lower Subalpine,,10
+721,WLNP,Eskerine,116,,2014,,Yes,NAD 83,12,290549,5442147,1325,Foothills Grassland,,13
+519,WLNP,Lower Rowe Trail,117,,2007,2007,No,NAD 83,11,714509,5438030,1996,Upper Subalpine,,10
+720,WLNP,Eskerine,117,,2014,,Yes,NAD 83,12,290481,5441890,1329,Foothills Grassland,,13
+520,WLNP,Lower Rowe Trail,118,,2007,2007,No,NAD 83,11,714277,5437898,2013,Upper Subalpine,,10
+719,WLNP,Eskerine,118,,2014,,Yes,NAD 83,12,290345,5441598,1327,Foothills Grassland,,13
+521,WLNP,Lower Rowe Trail,119,,2007,2007,No,NAD 83,11,714027,5437691,2077,Upper Subalpine,,10
+718,WLNP,Eskerine,119,,2014,,Yes,NAD 83,12,290254,5441344,1327,Foothills Grassland,,13
+550,WLNP,Summit Lake,120,,2007,,Yes,NAD 83,11,717812,5433027,2018,Upper Subalpine,,8
+551,WLNP,Summit Lake,121,,2007,,Yes,NAD 83,11,717850,5433336,2043,Upper Subalpine,,8
+552,WLNP,Summit Lake,122,,2007,,Yes,NAD 83,11,717902,5433631,2098,Upper Subalpine,,8
+553,WLNP,Summit Lake,123,,2007,,No,NAD 83,11,718120,5433850,2128,Upper Subalpine,,8
+472,WLNP,Cameron Lake,124,124,2007,,Yes,NAD 83,11,716757,5433342,1828,Lower Subalpine,,7
+554,WLNP,Summit Lake,125,,2007,,Yes,NAD 83,11,717353,5432814,1965,Upper Subalpine,,8
+555,WLNP,Summit Lake,126,,2007,,Yes,NAD 83,11,717707,5432373,1937,Upper Subalpine,,8
+556,WLNP,Summit Lake,127,,2007,,Yes,NAD 83,11,717969,5432213,1907,Lower Subalpine,,8
+557,WLNP,Summit Lake,128,,2007,,Yes,NAD 83,11,718382,5433997,2178,Upper Subalpine,,8
+558,WLNP,Summit Lake,129,,2007,,Yes,NAD 83,11,718653,5434134,2209,Upper Subalpine,,8
+728,WLNP,Cardston Gate South,150,,2015,,Yes,NAD 83,12,294046,5443397,1304,Foothills Parkland,,14
+729,WLNP,Cardston Gate South,151,,2015,,Yes,NAD 83,12,294198,5443655,1314,Foothills Parkland,,14
+730,WLNP,Cardston Gate South,152,,2015,,Yes,NAD 83,12,294448,5443955,1308,Foothills Parkland,,14
+731,WLNP,Cardston Gate South,153,,2015,,Yes,NAD 83,12,294639,5444231,1308,Foothills Parkland,,14
+732,WLNP,Cardston Gate South,154,,2015,,Yes,NAD 83,12,294782,5444469,1300,Foothills Parkland,,14
+733,WLNP,Stoney Flats,156,,2015,,Yes,NAD 83,12,294139,5439717,1358,Foothills Parkland,,15
+734,WLNP,Stoney Flats,157,,2015,,Yes,NAD 83,12,293781,5439670,1340,Foothills Parkland,,15
+735,WLNP,Stoney Flats,158,,2015,,Yes,NAD 83,12,293285,5439595,1321,Foothills Parkland,,15
+736,WLNP,Stoney Flats,159,,2015,,Yes,NAD 83,12,293026,5439007,1297,Foothills Parkland,,15
+737,WLNP,Stoney Flats,160,,2015,,Yes,NAD 83,12,292622,5439132,1297,Foothills Parkland,,15
+738,WLNP,Stoney Flats,161,,2015,,Yes,NAD 83,12,292238,5439066,1288,Foothills Parkland,,15
+739,WLNP,Blakiston Fan,162,,2015,,Yes,NAD 83,12,290933,5440520,1283,Foothills Parkland,,16
+740,WLNP,Blakiston Fan,163,,2015,,Yes,NAD 83,12,290788,5440230,1285,Foothills Parkland,,16
+741,WLNP,Blakiston Fan,164,,2015,,Yes,NAD 83,12,290652,5439923,1286,Foothills Parkland,,16
+742,WLNP,Blakiston Fan,165,,2015,,Yes,NAD 83,12,290494,5439499,1289,Foothills Parkland,,16
+747,WLNP,Blakiston Fan,166,,2015,,Yes,NAD 83,12,290176,5439054,1275,Foothills Parkland,,16
+744,WLNP,Blakiston Fan,167,,2015,,Yes,NAD 83,12,289873,5438659,1286,Foothills Parkland,,16
+745,WLNP,Blakiston Fan,168,,2015,,Yes,NAD 83,12,289682,5438932,1294,Foothills Parkland,,16
+746,WLNP,Blakiston Fan,169,,2015,,Yes,NAD 83,12,289828,5439332,1288,Foothills Parkland,,16
+473,WLNP,Cardston Entrance,550,,2007,,Yes,NAD 83,12,294965,5445903,1290,Foothills Parkland,,9
+474,WLNP,Cardston Entrance,551,,2007,,Yes,NAD 83,12,294765,5445892,1286,Foothills Parkland,,9
+475,WLNP,Cardston Entrance,552,,2007,,Yes,NAD 83,12,294554,5445882,1285,Foothills Parkland,,9
+476,WLNP,Cardston Entrance,553,,2007,,Yes,NAD 83,12,294330,5445875,1280,Foothills Parkland,,9
+477,WLNP,Cardston Entrance,554,,2007,,Yes,NAD 83,12,294060,5445838,1285,Foothills Parkland,,9
+478,WLNP,Cardston Entrance,555,,2007,,Yes,NAD 83,12,293895,5445655,1285,Foothills Parkland,,9
+479,WLNP,Cardston Entrance,556,,2007,,Yes,NAD 83,12,293729,5445510,1285,Foothills Parkland,,9
+480,WLNP,Cardston Entrance,557,,2007,,Yes,NAD 83,12,293667,5445323,1285,Foothills Parkland,,9
+569,WLNP,Yarrow Cabin Trail,567,,2007,,Yes,NAD 83,12,283190,5453590,1525,Montane,,6
+570,WLNP,Yarrow Cabin Trail,568,,2007,,Yes,NAD 83,12,283381,5453589,1546,Montane,,6
+571,WLNP,Yarrow Cabin Trail,569,,2007,,Yes,NAD 83,12,283553,5453609,1557,Montane,,6
+572,WLNP,Yarrow Cabin Trail,570,,2007,,Yes,NAD 83,12,283727,5453629,1569,Montane,,6
+573,WLNP,Yarrow Cabin Trail,571,,2007,,Yes,NAD 83,12,283876,5453725,1600,Montane,,6
+574,WLNP,Yarrow Cabin Trail,572,,2007,,Yes,NAD 83,12,284035,5453702,1627,Montane,,6
+575,WLNP,Yarrow Cabin Trail,573,,2007,,Yes,NAD 83,12,284021,5453562,1655,Montane,,6
+576,WLNP,Yarrow Cabin Trail,574,,2007,,Yes,NAD 83,12,284175,5453559,1677,Montane,,6
+525,WLNP,Prairie Trail,575,,2007,,Yes,NAD 83,12,289892,5445712,1344,Foothills Parkland,,3
+526,WLNP,Prairie Trail,576,,2007,,Yes,NAD 83,12,289859,5445503,1345,Foothills Parkland,,3
+527,WLNP,Prairie Trail,577,,2007,,Yes,NAD 83,12,289781,5445284,1347,Foothills Parkland,,3
+528,WLNP,Prairie Trail,578,,2007,,Yes,NAD 83,12,289698,5445099,1346,Foothills Parkland,,3
+529,WLNP,Prairie Trail,579,,2007,,Yes,NAD 83,12,289738,5444898,1347,Foothills Parkland,,3
+530,WLNP,Prairie Trail,580,,2007,,Yes,NAD 83,12,289665,5444589,1350,Foothills Parkland,,3
+531,WLNP,Prairie Trail,581,,2007,,Yes,NAD 83,12,289566,5444357,1350,Foothills Parkland,,3
+532,WLNP,Prairie Trail,582,,2007,,Yes,NAD 83,12,289484,5444163,1350,Foothills Parkland,,3
+533,WLNP,Prairie Trail,583,,2007,,Yes,NAD 83,12,289366,5443880,1359,Foothills Parkland,,3
+534,WLNP,Prairie Trail,584,,2007,,Yes,NAD 83,12,289249,5443603,1370,Foothills Parkland,,3
+579,WLNP,Yarrow Cabin Trail,590,,2007,,Yes,NAD 83,12,284382,5453351,1688,Foothills Parkland,,6
+580,WLNP,Yarrow Cabin Trail,591,,2007,,Yes,NAD 83,12,284454,5453067,1658,Montane,,6
+522,WLNP,Lower Rowe Trail,900,,2007,2007,No,NAD 83,11,713502,5438471,,Upper Subalpine,,10
