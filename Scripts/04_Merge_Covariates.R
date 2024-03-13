@@ -5,10 +5,11 @@ library(readr)
 severity_data <- read_csv("Input/03_Standardized_Severity.csv")
 terrain_data <- read_csv("Input/03_Standardized_Terrain_GEE.csv")
 landcover_data <- read_csv("Input/03_Standardized_LandCover_2016_2019_GEE.csv")
+coordinates_data <- read_csv("Input/02_Standardized.csv") # Load the coordinates data
 
-# Ensure the 'location' column is consistently named across datasets.
-terrain_data <- rename(terrain_data, location = locatin) 
-landcover_data <- rename(landcover_data, location = locatin) 
+# Ensure the 'location' column is consistently named across datasets
+terrain_data <- rename(terrain_data, location = locatin)
+landcover_data <- rename(landcover_data, location = locatin)
 
 # Keep only the first row of each duplicate entry based on 'location' and 'year'
 severity_data_unique <- severity_data %>%
@@ -23,41 +24,15 @@ landcover_data_unique <- landcover_data %>%
 # Now join the datasets on 'location' and 'year'
 final_data <- severity_data_unique %>%
   inner_join(terrain_data_unique, by = c("location", "year")) %>%
-  inner_join(landcover_data_unique, by = c("location", "year")) %>%
-  select(everything()) # Adjust the select statement as per your specific column requirements
+  inner_join(landcover_data_unique, by = c("location", "year"))
 
-# Write the final dataset to a new CSV file
-write_csv(final_data, "Input/04_Cleaned_Waterton.csv")
+# Prepare the coordinates_data by ensuring it only contains unique rows for each 'location'
+coordinates_data_unique <- coordinates_data %>%
+  distinct(location, .keep_all = TRUE)
 
+# Join the coordinates from the coordinates_data_unique
+final_data_with_coordinates <- final_data %>%
+  inner_join(coordinates_data_unique %>% select(location, latitude, longitude), by = "location")
 
-
-
-#######checked for duplicates 
-# Check for duplicate 'location' and 'year' combinations for severity
-duplicates_severity <- severity_data %>%
-  group_by(location, year) %>%
-  filter(n() > 1) %>%
-  ungroup()
-
-# If duplicates exist, they will be shown here
-print(duplicates_severity)
-
-# Check for duplicate 'location' and 'year' combinations for landcover
-duplicates_landcover <- landcover_data %>%
-  group_by(location, year) %>%
-  filter(n() > 1) %>%
-  ungroup()
-
-# If duplicates exist, they will be shown here
-print(duplicates_landcover)
-
-
-# Check for duplicate 'location' and 'year' combinations in the terrain_data
-duplicates_terrain <- terrain_data %>%
-  group_by(location, year) %>%
-  filter(n() > 1) %>%
-  ungroup()
-
-# If duplicates exist, they will be shown here
-print(duplicates_terrain)
-
+# Write the final dataset with coordinates to a new CSV file
+write_csv(final_data_with_coordinates, "Input/04_Cleaned_Waterton.csv")
