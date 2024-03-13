@@ -1,0 +1,1544 @@
+locatin,year,landCover_2016,landCover_2019
+WLNP-1-1,2018,210,210
+WLNP-1-2,2018,210,210
+WLNP-1-3,2018,210,210
+WLNP-2-1,2018,210,100
+WLNP-2-2,2018,210,50
+WLNP-2-3,2018,210,33
+WLNP-2-4,2018,210,33
+WLNP-2-5,2018,210,210
+WLNP-2-6,2018,210,50
+WLNP-3-1,2018,50,50
+WLNP-4-1,2018,50,50
+WLNP-4-2,2018,210,50
+WLNP-4-3,2018,100,100
+WLNP-4-4,2018,220,50
+WLNP-4-5,2018,230,50
+WLNP-5-1,2018,220,220
+WLNP-5-2,2018,50,50
+WLNP-5-3,2018,210,210
+WLNP-5-4,2018,210,210
+WLNP-5-5,2018,220,220
+WLNP-6-1,2018,210,33
+WLNP-6-4,2018,50,33
+WLNP-6-5,2018,33,33
+WLNP-7-1,2018,220,220
+WLNP-7-2,2018,220,220
+WLNP-7-3,2018,220,220
+WLNP-7-4,2018,80,80
+WLNP-7-5,2018,220,220
+WLNP-8-1,2018,80,80
+WLNP-8-2,2018,80,80
+WLNP-8-3,2018,50,50
+WLNP-8-4,2018,220,220
+WLNP-10-1,2019,50,50
+WLNP-10-2,2019,220,220
+WLNP-10-3,2019,220,220
+WLNP-11-1,2019,50,50
+WLNP-11-2,2019,220,50
+WLNP-12-1,2019,100,100
+WLNP-12-2,2019,50,50
+WLNP-12-3,2019,50,50
+WLNP-12-4,2019,50,50
+WLNP-12-5,2019,100,100
+WLNP-13-1,2019,100,100
+WLNP-13-2,2019,80,80
+WLNP-13-3,2019,100,100
+WLNP-13-4,2019,220,220
+WLNP-14-1,2019,210,50
+WLNP-14-2,2019,50,50
+WLNP-14-3,2019,50,50
+WLNP-14-4,2019,50,50
+WLNP-14-5,2019,50,50
+WLNP-15-1,2019,210,50
+WLNP-15-2,2019,210,50
+WLNP-15-3,2019,210,210
+WLNP-16-1,2019,210,33
+WLNP-16-2,2019,50,50
+WLNP-16-3,2019,50,100
+WLNP-16-4,2019,50,50
+WLNP-16-5,2019,210,210
+WLNP-16-6,2019,210,210
+WLNP-16-7,2019,210,210
+WLNP-16-8,2019,210,210
+WLNP-16-9,2019,100,100
+WLNP-17-2,2019,210,210
+WLNP-17-3,2019,210,210
+WLNP-17-4,2019,220,220
+WLNP-17-6,2019,210,210
+WLNP-17-7,2019,210,210
+WLNP-17-8,2019,210,210
+WLNP-18-1,2019,210,50
+WLNP-18-2,2019,210,50
+WLNP-18-3,2019,210,33
+WLNP-18-4,2019,210,33
+WLNP-18-5,2019,210,50
+WLNP-18-6,2019,33,33
+WLNP-18-7,2019,33,33
+WLNP-19-4,2019,50,220
+WLNP-19-5,2019,100,100
+WLNP-19-6,2019,50,50
+WLNP-19-7,2019,210,210
+WLNP-19-8,2019,210,210
+WLNP-21-1,2019,210,33
+WLNP-21-2,2019,50,50
+WLNP-21-3,2019,220,50
+WLNP-21-4,2019,210,50
+WLNP-21-5,2019,50,100
+WLNP-22-1,2019,210,100
+WLNP-22-2,2019,210,210
+WLNP-22-3,2019,210,210
+WLNP-22-4,2019,210,210
+WLNP-22-5,2019,210,210
+WLNP-22-6,2019,210,210
+WLNP-22-7,2019,210,210
+WLNP-22-9,2019,210,210
+WLNP-23-1,2019,210,33
+WLNP-23-2,2019,210,33
+WLNP-23-3,2019,210,50
+WLNP-23-4,2019,210,50
+WLNP-23-5,2019,210,210
+WLNP-23-6,2019,210,210
+WLNP-23-7,2019,210,210
+WLNP-23-8,2019,210,210
+WLNP-24-1,2019,80,80
+WLNP-24-2,2019,50,50
+WLNP-8-1,2019,80,80
+WLNP-8-2,2019,80,80
+WLNP-8-3,2019,50,50
+WLNP-8-4,2019,220,220
+WLNP-8-5,2019,220,220
+WLNP-8-6,2019,210,210
+WLNP-8-7,2019,210,210
+WLNP-8-8,2019,210,210
+WLNP-9-1,2019,210,50
+WLNP-9-2,2019,220,100
+WLNP-9-3,2019,50,50
+WLNP-9-4,2019,210,210
+WLNP-9-5,2019,210,210
+WLNP-18-5,2020,210,50
+WLNP-18-8,2020,210,33
+WLNP-21-6,2020,100,50
+WLNP-1-1,2021,210,210
+WLNP-1-2,2021,210,210
+WLNP-1-3,2021,210,210
+WLNP-10-1,2021,50,50
+WLNP-13-2,2021,80,80
+WLNP-13-3,2021,100,100
+WLNP-13-4,2021,220,220
+WLNP-15-1,2021,210,50
+WLNP-15-2,2021,210,50
+WLNP-16-1,2021,210,33
+WLNP-16-2,2021,50,50
+WLNP-16-3,2021,50,100
+WLNP-16-4,2021,50,50
+WLNP-16-5,2021,210,210
+WLNP-16-7,2021,210,210
+WLNP-16-8,2021,210,210
+WLNP-16-9,2021,100,100
+WLNP-17-1,2021,210,33
+WLNP-17-2,2021,210,210
+WLNP-17-3,2021,210,210
+WLNP-17-6,2021,210,210
+WLNP-17-7,2021,210,210
+WLNP-17-8,2021,210,210
+WLNP-2-2,2021,210,50
+WLNP-2-3,2021,210,33
+WLNP-2-4,2021,210,33
+WLNP-2-5,2021,210,210
+WLNP-22-1,2021,210,100
+WLNP-22-10,2021,210,210
+WLNP-22-2,2021,210,210
+WLNP-22-3,2021,210,210
+WLNP-22-4,2021,210,210
+WLNP-22-5,2021,210,210
+WLNP-22-7,2021,210,210
+WLNP-22-9,2021,210,210
+WLNP-6-1,2021,210,33
+WLNP-6-3,2021,210,33
+WLNP-6-4,2021,50,33
+WLNP-6-5,2021,33,33
+WLNP-7-2,2021,220,220
+WLNP-7-3,2021,220,220
+WLNP-7-4,2021,80,80
+WLNP-7-5,2021,220,220
+WLNP-8-1,2021,80,80
+WLNP-8-10,2021,210,210
+WLNP-8-2,2021,80,80
+WLNP-8-3,2021,50,50
+WLNP-8-4,2021,220,220
+WLNP-8-7,2021,210,210
+WLNP-8-8,2021,210,210
+WLNP-8-9,2021,210,210
+WLNP-9-1,2021,210,50
+WLNP-9-2,2021,220,100
+WLNP-9-3,2021,50,50
+WLNP-9-4,2021,210,210
+WLNP-9-5,2021,210,210
+WLNP-SUM-12,2021,210,33
+WLNP-SUM-127,2021,210,210
+WLNP-SUM-15,2021,210,33
+WLNP-SUM-9,2021,210,33
+WLNP-WP-1,2021,210,210
+WLNP-WP-10,2021,210,33
+WLNP-WP-11,2021,210,210
+WLNP-WP-12,2021,210,210
+WLNP-WP-13,2021,210,210
+WLNP-WP-3,2021,220,220
+WLNP-WP-4,2021,220,220
+WLNP-WP-5,2021,50,50
+WLNP-WP-6,2021,50,50
+WLNP-WP-7,2021,50,50
+WLNP-WP-8,2021,210,33
+WLNP-WP-9,2021,210,33
+AKAMINA-90,2021,210,33
+AKAMINA-91,2021,210,33
+AKAMINA-92,2021,210,33
+AKAMINA-93,2021,210,33
+AKAMINA-94,2021,210,33
+AKAMINA-95,2021,210,33
+BLAKISTON-FAN-162,2021,100,100
+BLAKISTON-FAN-163,2021,100,100
+BLAKISTON-FAN-164,2021,100,100
+BLAKISTON-FAN-165,2021,100,100
+BLAKISTON-FAN-166,2021,100,100
+BLAKISTON-FAN-167,2021,100,100
+BLAKISTON-FAN-168,2021,100,100
+BLAKISTON-FAN-169,2021,100,100
+CAMERON-LAKE-1,2021,210,210
+CAMERON-LAKE-124,2021,210,210
+CAMERON-LAKE-3,2021,210,210
+CAMERON-LAKE-4,2021,210,33
+CAMERON-LAKE-5,2021,210,210
+CAMERON-LAKE-6,2021,210,210
+CARDSTON-ENTRANCE-550,2021,100,100
+CARDSTON-ENTRANCE-551,2021,100,100
+CARDSTON-ENTRANCE-552,2021,100,100
+CARDSTON-ENTRANCE-553,2021,100,100
+CARDSTON-ENTRANCE-554,2021,100,100
+CARDSTON-ENTRANCE-555,2021,100,100
+CARDSTON-ENTRANCE-556,2021,100,100
+CARDSTON-ENTRANCE-557,2021,100,100
+CARDSTON-GATE-SOUTH-150,2021,100,100
+CARDSTON-GATE-SOUTH-151,2021,100,100
+CARDSTON-GATE-SOUTH-152,2021,100,100
+CARDSTON-GATE-SOUTH-153,2021,100,100
+CARDSTON-GATE-SOUTH-154,2021,100,100
+CRANDELL-LAKE-100,2021,210,210
+CRANDELL-LAKE-101,2021,210,100
+CRANDELL-LAKE-102,2021,210,33
+CRANDELL-LAKE-103,2021,210,50
+CRANDELL-LAKE-104,2021,210,33
+CRANDELL-LAKE-105,2021,210,50
+ESKERINE-110,2021,100,100
+ESKERINE-111,2021,100,100
+ESKERINE-112,2021,100,100
+ESKERINE-113,2021,50,50
+ESKERINE-114,2021,50,50
+ESKERINE-115,2021,100,100
+ESKERINE-116,2021,100,100
+ESKERINE-117,2021,100,100
+ESKERINE-118,2021,100,100
+ESKERINE-119,2021,100,100
+HORSESHOE-BASIN-41,2021,50,50
+HORSESHOE-BASIN-42,2021,50,50
+HORSESHOE-BASIN-43,2021,220,220
+HORSESHOE-BASIN-44,2021,50,100
+HORSESHOE-BASIN-45,2021,50,50
+HORSESHOE-BASIN-46,2021,50,50
+HORSESHOE-BASIN-47,2021,50,50
+HORSESHOE-BASIN-48,2021,220,100
+HORSESHOE-BASIN-49,2021,50,50
+HORSESHOE-BASIN-50,2021,50,50
+LOWER-MOUNT-CRANDELL-18,2021,230,50
+LOWER-MOUNT-CRANDELL-19,2021,100,100
+LOWER-MOUNT-CRANDELL-20,2021,220,50
+LOWER-MOUNT-CRANDELL-21,2021,210,50
+LOWER-MOUNT-CRANDELL-22,2021,50,50
+LOWER-MOUNT-CRANDELL-23,2021,220,50
+LOWER-MOUNT-CRANDELL-24,2021,210,210
+LOWER-MOUNT-CRANDELL-70,2021,50,50
+LOWER-MOUNT-CRANDELL-71,2021,50,50
+LOWER-MOUNT-CRANDELL-72,2021,100,100
+PRAIRIE-TRAIL-575,2021,50,100
+PRAIRIE-TRAIL-576,2021,100,100
+PRAIRIE-TRAIL-577,2021,100,100
+PRAIRIE-TRAIL-578,2021,100,100
+PRAIRIE-TRAIL-579,2021,100,100
+PRAIRIE-TRAIL-580,2021,100,100
+PRAIRIE-TRAIL-581,2021,100,100
+PRAIRIE-TRAIL-582,2021,100,100
+PRAIRIE-TRAIL-583,2021,100,100
+PRAIRIE-TRAIL-584,2021,100,100
+SOFA-MOUNTAIN-25,2021,210,210
+SOFA-MOUNTAIN-26,2021,210,210
+SOFA-MOUNTAIN-27,2021,210,210
+SOFA-MOUNTAIN-28,2021,210,210
+SOFA-MOUNTAIN-29,2021,220,220
+SOFA-MOUNTAIN-30,2021,50,50
+SOFA-MOUNTAIN-31,2021,50,50
+SOFA-MOUNTAIN-32,2021,50,50
+SOFA-MOUNTAIN-80,2021,220,220
+SOFA-MOUNTAIN-81,2021,50,50
+STONEY-FLATS-156,2021,50,50
+STONEY-FLATS-157,2021,100,100
+STONEY-FLATS-158,2021,50,50
+STONEY-FLATS-159,2021,100,100
+STONEY-FLATS-160,2021,100,100
+STONEY-FLATS-161,2021,100,100
+SUMMIT-LAKE-11,2021,210,33
+SUMMIT-LAKE-12,2021,210,33
+SUMMIT-LAKE-120,2021,210,33
+SUMMIT-LAKE-121,2021,50,33
+SUMMIT-LAKE-122,2021,50,33
+SUMMIT-LAKE-123,2021,210,33
+SUMMIT-LAKE-125,2021,210,33
+SUMMIT-LAKE-126,2021,210,33
+SUMMIT-LAKE-127,2021,210,210
+SUMMIT-LAKE-128,2021,50,33
+SUMMIT-LAKE-129,2021,33,33
+SUMMIT-LAKE-15,2021,210,33
+SUMMIT-LAKE-16,2021,210,33
+SUMMIT-LAKE-9,2021,210,33
+WISHBONE-TRAIL-33,2021,80,80
+WISHBONE-TRAIL-34,2021,80,80
+WISHBONE-TRAIL-35,2021,80,80
+WISHBONE-TRAIL-36,2021,80,80
+WISHBONE-TRAIL-37,2021,220,220
+WISHBONE-TRAIL-38,2021,220,220
+WISHBONE-TRAIL-39,2021,220,220
+WISHBONE-TRAIL-40,2021,220,220
+WISHBONE-TRAIL-60,2021,220,220
+WISHBONE-TRAIL-61,2021,220,220
+YARROW-CABIN-TRAIL-567,2021,210,210
+YARROW-CABIN-TRAIL-568,2021,210,210
+YARROW-CABIN-TRAIL-569,2021,210,210
+YARROW-CABIN-TRAIL-570,2021,210,210
+YARROW-CABIN-TRAIL-571,2021,210,210
+YARROW-CABIN-TRAIL-572,2021,210,210
+YARROW-CABIN-TRAIL-573,2021,210,210
+YARROW-CABIN-TRAIL-574,2021,210,210
+YARROW-CABIN-TRAIL-590,2021,50,50
+Blakiston Fan_162,2015,100,100
+Blakiston Fan_162,2016,100,100
+Blakiston Fan_162,2017,100,100
+Blakiston Fan_163,2015,100,100
+Blakiston Fan_163,2016,100,100
+Blakiston Fan_163,2017,100,100
+Blakiston Fan_164,2015,100,100
+Blakiston Fan_164,2016,100,100
+Blakiston Fan_164,2017,100,100
+Blakiston Fan_165,2015,100,100
+Blakiston Fan_165,2016,100,100
+Blakiston Fan_165,2017,100,100
+Blakiston Fan_166,2015,100,100
+Blakiston Fan_166,2016,100,100
+Blakiston Fan_166,2017,100,100
+Blakiston Fan_167,2015,100,100
+Blakiston Fan_167,2016,100,100
+Blakiston Fan_167,2017,100,100
+Blakiston Fan_168,2015,100,100
+Blakiston Fan_168,2016,100,100
+Blakiston Fan_168,2017,100,100
+Blakiston Fan_169,2015,100,100
+Blakiston Fan_169,2016,100,100
+Blakiston Fan_169,2017,100,100
+Cameron Lake_1,2007,210,210
+Cameron Lake_1,2009,210,210
+Cameron Lake_1,2010,210,210
+Cameron Lake_1,2014,210,210
+Cameron Lake_1,2015,210,210
+Cameron Lake_124,2009,100,100
+Cameron Lake_124,2010,100,100
+Cameron Lake_124,2014,100,100
+Cameron Lake_124,2015,100,100
+Cameron Lake_3,2007,210,210
+Cameron Lake_3,2009,210,210
+Cameron Lake_3,2010,210,210
+Cameron Lake_3,2014,210,210
+Cameron Lake_3,2015,210,210
+Cameron Lake_4,2007,210,33
+Cameron Lake_4,2009,210,33
+Cameron Lake_4,2010,210,33
+Cameron Lake_4,2014,210,33
+Cameron Lake_4,2015,210,33
+Cameron Lake_5,2009,210,210
+Cameron Lake_5,2010,210,210
+Cameron Lake_5,2014,210,210
+Cameron Lake_5,2015,210,210
+Cameron Lake_6,2007,210,210
+Cameron Lake_6,2009,210,210
+Cameron Lake_6,2010,210,210
+Cameron Lake_6,2014,210,210
+Cameron Lake_6,2015,210,210
+Cardston Gate South_150,2015,100,100
+Cardston Gate South_150,2016,100,100
+Cardston Gate South_150,2017,100,100
+Cardston Gate South_151,2015,100,100
+Cardston Gate South_151,2016,100,100
+Cardston Gate South_151,2017,100,100
+Cardston Gate South_152,2015,100,100
+Cardston Gate South_152,2016,100,100
+Cardston Gate South_152,2017,100,100
+Cardston Gate South_153,2015,100,100
+Cardston Gate South_153,2016,100,100
+Cardston Gate South_153,2017,100,100
+Cardston Gate South_154,2015,100,100
+Cardston Gate South_154,2016,100,100
+Cardston Gate South_154,2017,100,100
+Eskerine_110,2015,220,100
+Eskerine_110,2016,220,100
+Eskerine_111,2015,50,50
+Eskerine_111,2016,50,50
+Eskerine_111,2017,50,50
+Eskerine_112,2015,50,50
+Eskerine_112,2016,50,50
+Eskerine_112,2017,50,50
+Eskerine_113,2015,220,220
+Eskerine_113,2016,220,220
+Eskerine_113,2017,220,220
+Eskerine_114,2015,220,220
+Eskerine_114,2016,220,220
+Eskerine_114,2017,220,220
+Eskerine_115,2016,50,50
+Eskerine_115,2017,50,50
+Eskerine_116,2016,220,220
+Eskerine_116,2017,220,220
+Eskerine_117,2015,210,210
+Eskerine_117,2016,210,210
+Eskerine_117,2017,210,210
+Eskerine_118,2015,210,33
+Eskerine_118,2016,210,33
+Eskerine_118,2017,210,33
+Eskerine_119,2015,210,33
+Eskerine_119,2016,210,33
+Eskerine_119,2017,210,33
+Lower Mount Crandell_17,2007,210,33
+Lower Rowe Trail_110,2007,50,50
+Lower Rowe Trail_115,2007,50,50
+Lower Rowe Trail_116,2007,100,100
+Lower Rowe Trail_117,2007,50,50
+Lower Rowe Trail_118,2007,210,100
+Lower Rowe Trail_119,2007,210,50
+Stoney Flats_156,2015,100,100
+Stoney Flats_156,2016,100,100
+Stoney Flats_157,2015,50,50
+Stoney Flats_157,2016,50,50
+Stoney Flats_158,2015,100,100
+Stoney Flats_158,2016,100,100
+Stoney Flats_159,2015,50,50
+Stoney Flats_159,2016,50,50
+Stoney Flats_160,2015,100,100
+Stoney Flats_160,2016,100,100
+Stoney Flats_161,2015,100,100
+Stoney Flats_161,2016,100,100
+Summit Lake_11,2007,210,33
+Summit Lake_11,2014,210,33
+Summit Lake_11,2015,210,33
+Summit Lake_12,2007,210,33
+Summit Lake_12,2014,210,33
+Summit Lake_12,2015,210,33
+Summit Lake_120,2007,210,50
+Summit Lake_120,2015,210,50
+Summit Lake_121,2007,100,100
+Summit Lake_121,2015,100,100
+Summit Lake_122,2007,100,100
+Summit Lake_122,2015,100,100
+Summit Lake_123,2015,100,100
+Summit Lake_125,2007,50,50
+Summit Lake_125,2014,50,50
+Summit Lake_125,2015,50,50
+Summit Lake_126,2007,100,100
+Summit Lake_126,2015,100,100
+Summit Lake_127,2007,100,100
+Summit Lake_127,2015,100,100
+Summit Lake_128,2007,100,100
+Summit Lake_128,2015,100,100
+Summit Lake_129,2007,100,100
+Summit Lake_129,2015,100,100
+Summit Lake_15,2007,210,33
+Summit Lake_15,2015,210,33
+Summit Lake_16,2007,210,33
+Summit Lake_16,2015,210,33
+Summit Lake_9,2007,210,33
+Summit Lake_9,2014,210,33
+Summit Lake_9,2015,210,33
+Blakiston Fan_162,2018,100,100
+Blakiston Fan_162,2019,100,100
+Blakiston Fan_163,2018,100,100
+Blakiston Fan_163,2019,100,100
+Blakiston Fan_164,2018,100,100
+Blakiston Fan_164,2019,100,100
+Blakiston Fan_165,2018,100,100
+Blakiston Fan_165,2019,100,100
+Blakiston Fan_166,2018,100,100
+Blakiston Fan_166,2019,100,100
+Blakiston Fan_167,2018,100,100
+Blakiston Fan_167,2019,100,100
+Blakiston Fan_168,2018,100,100
+Blakiston Fan_168,2019,100,100
+Blakiston Fan_169,2018,100,100
+Blakiston Fan_169,2019,100,100
+Cameron Lake_1,2018,210,210
+Cameron Lake_124,2018,100,100
+Cameron Lake_3,2018,210,210
+Cameron Lake_4,2018,210,33
+Cameron Lake_6,2018,210,210
+Cardston Gate South_150,2018,100,100
+Cardston Gate South_150,2019,100,100
+Cardston Gate South_151,2018,100,100
+Cardston Gate South_151,2019,100,100
+Cardston Gate South_152,2018,100,100
+Cardston Gate South_152,2019,100,100
+Cardston Gate South_153,2018,100,100
+Cardston Gate South_153,2019,100,100
+Cardston Gate South_154,2018,100,100
+Cardston Gate South_154,2019,100,100
+Eskerine_110,2019,220,100
+Eskerine_111,2019,50,50
+Eskerine_112,2019,50,50
+Eskerine_113,2019,220,220
+Eskerine_114,2019,220,220
+Eskerine_116,2019,220,220
+Eskerine_117,2019,210,210
+Eskerine_118,2019,210,33
+Eskerine_119,2019,210,33
+Stoney Flats_156,2018,100,100
+Stoney Flats_156,2019,100,100
+Stoney Flats_157,2019,50,50
+Stoney Flats_158,2018,100,100
+Stoney Flats_158,2019,100,100
+Stoney Flats_159,2019,50,50
+Stoney Flats_160,2019,100,100
+Stoney Flats_161,2019,100,100
+Summit Lake_12,2018,210,33
+Summit Lake_120,2018,210,50
+Summit Lake_121,2018,100,100
+Summit Lake_122,2018,100,100
+Summit Lake_123,2018,100,100
+Summit Lake_125,2018,50,50
+Summit Lake_127,2018,100,100
+Summit Lake_128,2018,100,100
+Summit Lake_129,2018,100,100
+Summit Lake_16,2018,210,33
+Akamina_90,2008,80,80
+Akamina_90,2009,80,80
+Akamina_90,2010,80,80
+Akamina_90,2014,80,80
+Akamina_90,2015,80,80
+Akamina_90,2016,80,80
+Akamina_90,2017,80,80
+Akamina_90,2018,80,80
+Akamina_90,2019,80,80
+Akamina_91,2008,80,80
+Akamina_91,2009,80,80
+Akamina_91,2010,80,80
+Akamina_91,2014,80,80
+Akamina_91,2015,80,80
+Akamina_91,2016,80,80
+Akamina_91,2017,80,80
+Akamina_91,2018,80,80
+Akamina_91,2019,80,80
+Akamina_92,2009,80,80
+Akamina_92,2010,80,80
+Akamina_92,2014,80,80
+Akamina_92,2015,80,80
+Akamina_92,2016,80,80
+Akamina_92,2017,80,80
+Akamina_92,2018,80,80
+Akamina_92,2019,80,80
+Akamina_94,2008,80,80
+Akamina_94,2009,80,80
+Akamina_94,2010,80,80
+Akamina_94,2014,80,80
+Akamina_94,2015,80,80
+Akamina_94,2016,80,80
+Akamina_94,2017,80,80
+Akamina_94,2018,80,80
+Akamina_94,2019,80,80
+Akamina_95,2008,220,220
+Akamina_95,2009,220,220
+Akamina_95,2010,220,220
+Akamina_95,2014,220,220
+Akamina_95,2015,220,220
+Akamina_95,2016,220,220
+Akamina_95,2017,220,220
+Akamina_95,2018,220,220
+Akamina_95,2019,220,220
+Cardston Entrance_550,2007,100,100
+Cardston Entrance_550,2008,100,100
+Cardston Entrance_550,2009,100,100
+Cardston Entrance_550,2010,100,100
+Cardston Entrance_550,2011,100,100
+Cardston Entrance_550,2012,100,100
+Cardston Entrance_550,2013,100,100
+Cardston Entrance_550,2014,100,100
+Cardston Entrance_550,2015,100,100
+Cardston Entrance_550,2016,100,100
+Cardston Entrance_550,2017,100,100
+Cardston Entrance_550,2018,100,100
+Cardston Entrance_550,2019,100,100
+Cardston Entrance_551,2007,100,100
+Cardston Entrance_551,2008,100,100
+Cardston Entrance_551,2009,100,100
+Cardston Entrance_551,2010,100,100
+Cardston Entrance_551,2011,100,100
+Cardston Entrance_551,2012,100,100
+Cardston Entrance_551,2013,100,100
+Cardston Entrance_551,2014,100,100
+Cardston Entrance_551,2015,100,100
+Cardston Entrance_551,2016,100,100
+Cardston Entrance_551,2017,100,100
+Cardston Entrance_551,2018,100,100
+Cardston Entrance_551,2019,100,100
+Cardston Entrance_552,2007,100,100
+Cardston Entrance_552,2008,100,100
+Cardston Entrance_552,2009,100,100
+Cardston Entrance_552,2010,100,100
+Cardston Entrance_552,2011,100,100
+Cardston Entrance_552,2012,100,100
+Cardston Entrance_552,2013,100,100
+Cardston Entrance_552,2014,100,100
+Cardston Entrance_552,2015,100,100
+Cardston Entrance_552,2016,100,100
+Cardston Entrance_552,2017,100,100
+Cardston Entrance_552,2018,100,100
+Cardston Entrance_552,2019,100,100
+Cardston Entrance_553,2007,100,100
+Cardston Entrance_553,2008,100,100
+Cardston Entrance_553,2009,100,100
+Cardston Entrance_553,2010,100,100
+Cardston Entrance_553,2011,100,100
+Cardston Entrance_553,2012,100,100
+Cardston Entrance_553,2013,100,100
+Cardston Entrance_553,2014,100,100
+Cardston Entrance_553,2015,100,100
+Cardston Entrance_553,2016,100,100
+Cardston Entrance_553,2017,100,100
+Cardston Entrance_553,2018,100,100
+Cardston Entrance_553,2019,100,100
+Cardston Entrance_554,2007,100,100
+Cardston Entrance_554,2008,100,100
+Cardston Entrance_554,2009,100,100
+Cardston Entrance_554,2010,100,100
+Cardston Entrance_554,2011,100,100
+Cardston Entrance_554,2012,100,100
+Cardston Entrance_554,2013,100,100
+Cardston Entrance_554,2014,100,100
+Cardston Entrance_554,2015,100,100
+Cardston Entrance_554,2016,100,100
+Cardston Entrance_554,2017,100,100
+Cardston Entrance_554,2018,100,100
+Cardston Entrance_554,2019,100,100
+Cardston Entrance_555,2007,100,100
+Cardston Entrance_555,2008,100,100
+Cardston Entrance_555,2009,100,100
+Cardston Entrance_555,2010,100,100
+Cardston Entrance_555,2011,100,100
+Cardston Entrance_555,2012,100,100
+Cardston Entrance_555,2013,100,100
+Cardston Entrance_555,2014,100,100
+Cardston Entrance_555,2015,100,100
+Cardston Entrance_555,2016,100,100
+Cardston Entrance_555,2017,100,100
+Cardston Entrance_555,2018,100,100
+Cardston Entrance_555,2019,100,100
+Cardston Entrance_556,2007,100,100
+Cardston Entrance_556,2008,100,100
+Cardston Entrance_556,2009,100,100
+Cardston Entrance_556,2010,100,100
+Cardston Entrance_556,2011,100,100
+Cardston Entrance_556,2012,100,100
+Cardston Entrance_556,2013,100,100
+Cardston Entrance_556,2014,100,100
+Cardston Entrance_556,2015,100,100
+Cardston Entrance_556,2016,100,100
+Cardston Entrance_556,2018,100,100
+Cardston Entrance_556,2019,100,100
+Cardston Entrance_557,2007,100,100
+Cardston Entrance_557,2008,100,100
+Cardston Entrance_557,2009,100,100
+Cardston Entrance_557,2010,100,100
+Cardston Entrance_557,2011,100,100
+Cardston Entrance_557,2012,100,100
+Cardston Entrance_557,2013,100,100
+Cardston Entrance_557,2014,100,100
+Cardston Entrance_557,2015,100,100
+Cardston Entrance_557,2016,100,100
+Cardston Entrance_557,2017,100,100
+Cardston Entrance_557,2018,100,100
+Cardston Entrance_557,2019,100,100
+Crandell Lake_100,2007,220,220
+Crandell Lake_100,2008,220,220
+Crandell Lake_100,2009,220,220
+Crandell Lake_100,2010,220,220
+Crandell Lake_100,2011,220,220
+Crandell Lake_100,2012,220,220
+Crandell Lake_100,2013,220,220
+Crandell Lake_100,2014,220,220
+Crandell Lake_100,2015,220,220
+Crandell Lake_100,2016,220,220
+Crandell Lake_100,2017,220,220
+Crandell Lake_100,2018,220,220
+Crandell Lake_100,2019,220,220
+Crandell Lake_101,2007,220,220
+Crandell Lake_101,2009,220,220
+Crandell Lake_101,2010,220,220
+Crandell Lake_101,2011,220,220
+Crandell Lake_101,2012,220,220
+Crandell Lake_101,2013,220,220
+Crandell Lake_101,2014,220,220
+Crandell Lake_101,2015,220,220
+Crandell Lake_101,2016,220,220
+Crandell Lake_101,2017,220,220
+Crandell Lake_101,2018,220,220
+Crandell Lake_101,2019,220,220
+Crandell Lake_102,2009,220,220
+Crandell Lake_102,2010,220,220
+Crandell Lake_102,2011,220,220
+Crandell Lake_102,2012,220,220
+Crandell Lake_102,2013,220,220
+Crandell Lake_102,2014,220,220
+Crandell Lake_102,2015,220,220
+Crandell Lake_102,2016,220,220
+Crandell Lake_102,2017,220,220
+Crandell Lake_102,2018,220,220
+Crandell Lake_102,2019,220,220
+Crandell Lake_103,2009,50,50
+Crandell Lake_103,2010,50,50
+Crandell Lake_103,2011,50,50
+Crandell Lake_103,2012,50,50
+Crandell Lake_103,2013,50,50
+Crandell Lake_103,2014,50,50
+Crandell Lake_103,2015,50,50
+Crandell Lake_103,2016,50,50
+Crandell Lake_103,2017,50,50
+Crandell Lake_103,2018,50,50
+Crandell Lake_103,2019,50,50
+Crandell Lake_104,2008,50,50
+Crandell Lake_104,2009,50,50
+Crandell Lake_104,2010,50,50
+Crandell Lake_104,2011,50,50
+Crandell Lake_104,2012,50,50
+Crandell Lake_104,2013,50,50
+Crandell Lake_104,2014,50,50
+Crandell Lake_104,2015,50,50
+Crandell Lake_104,2016,50,50
+Crandell Lake_104,2017,50,50
+Crandell Lake_104,2018,50,50
+Crandell Lake_104,2019,50,50
+Crandell Lake_105,2008,220,220
+Crandell Lake_105,2009,220,220
+Crandell Lake_105,2010,220,220
+Crandell Lake_105,2011,220,220
+Crandell Lake_105,2012,220,220
+Crandell Lake_105,2013,220,220
+Crandell Lake_105,2014,220,220
+Crandell Lake_105,2015,220,220
+Crandell Lake_105,2016,220,220
+Crandell Lake_105,2017,220,220
+Crandell Lake_105,2018,220,220
+Crandell Lake_105,2019,220,220
+Horseshoe Basin_41,2007,33,33
+Horseshoe Basin_41,2008,33,33
+Horseshoe Basin_41,2009,33,33
+Horseshoe Basin_41,2010,33,33
+Horseshoe Basin_41,2012,33,33
+Horseshoe Basin_41,2013,33,33
+Horseshoe Basin_41,2014,33,33
+Horseshoe Basin_41,2015,33,33
+Horseshoe Basin_41,2016,33,33
+Horseshoe Basin_41,2017,33,33
+Horseshoe Basin_41,2018,33,33
+Horseshoe Basin_41,2019,33,33
+Horseshoe Basin_42,2007,50,50
+Horseshoe Basin_42,2008,50,50
+Horseshoe Basin_42,2009,50,50
+Horseshoe Basin_42,2010,50,50
+Horseshoe Basin_42,2012,50,50
+Horseshoe Basin_42,2013,50,50
+Horseshoe Basin_42,2014,50,50
+Horseshoe Basin_42,2015,50,50
+Horseshoe Basin_42,2016,50,50
+Horseshoe Basin_42,2017,50,50
+Horseshoe Basin_42,2018,50,50
+Horseshoe Basin_42,2019,50,50
+Horseshoe Basin_43,2007,230,50
+Horseshoe Basin_43,2009,230,50
+Horseshoe Basin_43,2010,230,50
+Horseshoe Basin_43,2012,230,50
+Horseshoe Basin_43,2013,230,50
+Horseshoe Basin_43,2014,230,50
+Horseshoe Basin_43,2015,230,50
+Horseshoe Basin_43,2016,230,50
+Horseshoe Basin_43,2017,230,50
+Horseshoe Basin_43,2018,230,50
+Horseshoe Basin_43,2019,230,50
+Horseshoe Basin_44,2007,100,100
+Horseshoe Basin_44,2009,100,100
+Horseshoe Basin_44,2010,100,100
+Horseshoe Basin_44,2012,100,100
+Horseshoe Basin_44,2013,100,100
+Horseshoe Basin_44,2014,100,100
+Horseshoe Basin_44,2015,100,100
+Horseshoe Basin_44,2016,100,100
+Horseshoe Basin_44,2017,100,100
+Horseshoe Basin_44,2018,100,100
+Horseshoe Basin_44,2019,100,100
+Horseshoe Basin_45,2007,220,50
+Horseshoe Basin_45,2008,220,50
+Horseshoe Basin_45,2009,220,50
+Horseshoe Basin_45,2010,220,50
+Horseshoe Basin_45,2012,220,50
+Horseshoe Basin_45,2013,220,50
+Horseshoe Basin_45,2014,220,50
+Horseshoe Basin_45,2015,220,50
+Horseshoe Basin_45,2016,220,50
+Horseshoe Basin_45,2017,220,50
+Horseshoe Basin_45,2018,220,50
+Horseshoe Basin_45,2019,220,50
+Horseshoe Basin_46,2007,210,50
+Horseshoe Basin_46,2009,210,50
+Horseshoe Basin_46,2010,210,50
+Horseshoe Basin_46,2012,210,50
+Horseshoe Basin_46,2013,210,50
+Horseshoe Basin_46,2014,210,50
+Horseshoe Basin_46,2015,210,50
+Horseshoe Basin_46,2016,210,50
+Horseshoe Basin_46,2017,210,50
+Horseshoe Basin_46,2018,210,50
+Horseshoe Basin_46,2019,210,50
+Horseshoe Basin_47,2007,50,50
+Horseshoe Basin_47,2009,50,50
+Horseshoe Basin_47,2010,50,50
+Horseshoe Basin_47,2012,50,50
+Horseshoe Basin_47,2013,50,50
+Horseshoe Basin_47,2014,50,50
+Horseshoe Basin_47,2015,50,50
+Horseshoe Basin_47,2016,50,50
+Horseshoe Basin_47,2017,50,50
+Horseshoe Basin_47,2018,50,50
+Horseshoe Basin_48,2007,220,50
+Horseshoe Basin_48,2008,220,50
+Horseshoe Basin_48,2009,220,50
+Horseshoe Basin_48,2010,220,50
+Horseshoe Basin_48,2012,220,50
+Horseshoe Basin_48,2013,220,50
+Horseshoe Basin_48,2014,220,50
+Horseshoe Basin_48,2015,220,50
+Horseshoe Basin_48,2016,220,50
+Horseshoe Basin_48,2017,220,50
+Horseshoe Basin_48,2018,220,50
+Horseshoe Basin_49,2007,210,50
+Horseshoe Basin_49,2008,210,50
+Horseshoe Basin_49,2009,210,50
+Horseshoe Basin_49,2010,210,50
+Horseshoe Basin_49,2012,210,50
+Horseshoe Basin_49,2013,210,50
+Horseshoe Basin_49,2014,210,50
+Horseshoe Basin_49,2015,210,50
+Horseshoe Basin_49,2016,210,50
+Horseshoe Basin_49,2017,210,50
+Horseshoe Basin_49,2018,210,50
+Horseshoe Basin_50,2007,210,210
+Horseshoe Basin_50,2009,210,210
+Horseshoe Basin_50,2010,210,210
+Horseshoe Basin_50,2012,210,210
+Horseshoe Basin_50,2013,210,210
+Horseshoe Basin_50,2014,210,210
+Horseshoe Basin_50,2015,210,210
+Horseshoe Basin_50,2016,210,210
+Horseshoe Basin_50,2018,210,210
+Lower Mount Crandell_18,2007,210,33
+Lower Mount Crandell_18,2008,210,33
+Lower Mount Crandell_18,2009,210,33
+Lower Mount Crandell_18,2010,210,33
+Lower Mount Crandell_18,2011,210,33
+Lower Mount Crandell_18,2012,210,33
+Lower Mount Crandell_18,2013,210,33
+Lower Mount Crandell_18,2014,210,33
+Lower Mount Crandell_18,2015,210,33
+Lower Mount Crandell_18,2016,210,33
+Lower Mount Crandell_18,2017,210,33
+Lower Mount Crandell_18,2018,210,33
+Lower Mount Crandell_19,2007,210,33
+Lower Mount Crandell_19,2008,210,33
+Lower Mount Crandell_19,2009,210,33
+Lower Mount Crandell_19,2010,210,33
+Lower Mount Crandell_19,2011,210,33
+Lower Mount Crandell_19,2012,210,33
+Lower Mount Crandell_19,2013,210,33
+Lower Mount Crandell_19,2014,210,33
+Lower Mount Crandell_19,2015,210,33
+Lower Mount Crandell_19,2016,210,33
+Lower Mount Crandell_19,2017,210,33
+Lower Mount Crandell_19,2018,210,33
+Lower Mount Crandell_20,2007,210,33
+Lower Mount Crandell_20,2009,210,33
+Lower Mount Crandell_20,2010,210,33
+Lower Mount Crandell_20,2011,210,33
+Lower Mount Crandell_20,2012,210,33
+Lower Mount Crandell_20,2013,210,33
+Lower Mount Crandell_20,2014,210,33
+Lower Mount Crandell_20,2015,210,33
+Lower Mount Crandell_20,2016,210,33
+Lower Mount Crandell_20,2017,210,33
+Lower Mount Crandell_20,2018,210,33
+Lower Mount Crandell_21,2007,210,33
+Lower Mount Crandell_21,2009,210,33
+Lower Mount Crandell_21,2010,210,33
+Lower Mount Crandell_21,2011,210,33
+Lower Mount Crandell_21,2012,210,33
+Lower Mount Crandell_21,2013,210,33
+Lower Mount Crandell_21,2014,210,33
+Lower Mount Crandell_21,2015,210,33
+Lower Mount Crandell_21,2016,210,33
+Lower Mount Crandell_21,2017,210,33
+Lower Mount Crandell_21,2018,210,33
+Lower Mount Crandell_22,2007,210,210
+Lower Mount Crandell_22,2009,210,210
+Lower Mount Crandell_22,2010,210,210
+Lower Mount Crandell_22,2011,210,210
+Lower Mount Crandell_22,2012,210,210
+Lower Mount Crandell_22,2013,210,210
+Lower Mount Crandell_22,2014,210,210
+Lower Mount Crandell_22,2015,210,210
+Lower Mount Crandell_22,2016,210,210
+Lower Mount Crandell_22,2017,210,210
+Lower Mount Crandell_22,2018,210,210
+Lower Mount Crandell_23,2007,50,210
+Lower Mount Crandell_23,2009,50,210
+Lower Mount Crandell_23,2010,50,210
+Lower Mount Crandell_23,2011,50,210
+Lower Mount Crandell_23,2012,50,210
+Lower Mount Crandell_23,2013,50,210
+Lower Mount Crandell_23,2014,50,210
+Lower Mount Crandell_23,2015,50,210
+Lower Mount Crandell_23,2016,50,210
+Lower Mount Crandell_23,2017,50,210
+Lower Mount Crandell_23,2018,50,210
+Lower Mount Crandell_24,2007,100,100
+Lower Mount Crandell_24,2009,100,100
+Lower Mount Crandell_24,2010,100,100
+Lower Mount Crandell_24,2011,100,100
+Lower Mount Crandell_24,2012,100,100
+Lower Mount Crandell_24,2013,100,100
+Lower Mount Crandell_24,2014,100,100
+Lower Mount Crandell_24,2015,100,100
+Lower Mount Crandell_24,2016,100,100
+Lower Mount Crandell_24,2017,100,100
+Lower Mount Crandell_24,2018,100,100
+Lower Mount Crandell_70,2007,210,210
+Lower Mount Crandell_70,2009,210,210
+Lower Mount Crandell_70,2010,210,210
+Lower Mount Crandell_70,2011,210,210
+Lower Mount Crandell_70,2012,210,210
+Lower Mount Crandell_70,2013,210,210
+Lower Mount Crandell_70,2014,210,210
+Lower Mount Crandell_70,2015,210,210
+Lower Mount Crandell_70,2016,210,210
+Lower Mount Crandell_70,2017,210,210
+Lower Mount Crandell_70,2018,210,210
+Lower Mount Crandell_71,2007,220,220
+Lower Mount Crandell_71,2009,220,220
+Lower Mount Crandell_71,2010,220,220
+Lower Mount Crandell_71,2011,220,220
+Lower Mount Crandell_71,2012,220,220
+Lower Mount Crandell_71,2013,220,220
+Lower Mount Crandell_71,2014,220,220
+Lower Mount Crandell_71,2015,220,220
+Lower Mount Crandell_71,2016,220,220
+Lower Mount Crandell_71,2017,220,220
+Lower Mount Crandell_71,2018,220,220
+Lower Mount Crandell_72,2010,50,50
+Lower Mount Crandell_72,2011,50,50
+Lower Mount Crandell_72,2012,50,50
+Lower Mount Crandell_72,2014,50,50
+Lower Mount Crandell_72,2015,50,50
+Lower Mount Crandell_72,2016,50,50
+Lower Mount Crandell_72,2018,50,50
+Prairie Trail_575,2007,210,210
+Prairie Trail_575,2008,210,210
+Prairie Trail_575,2009,210,210
+Prairie Trail_575,2010,210,210
+Prairie Trail_575,2011,210,210
+Prairie Trail_575,2012,210,210
+Prairie Trail_575,2013,210,210
+Prairie Trail_575,2014,210,210
+Prairie Trail_575,2015,210,210
+Prairie Trail_575,2016,210,210
+Prairie Trail_575,2017,210,210
+Prairie Trail_575,2018,210,210
+Prairie Trail_575,2019,210,210
+Prairie Trail_576,2007,50,100
+Prairie Trail_576,2008,50,100
+Prairie Trail_576,2009,50,100
+Prairie Trail_576,2010,50,100
+Prairie Trail_576,2011,50,100
+Prairie Trail_576,2012,50,100
+Prairie Trail_576,2013,50,100
+Prairie Trail_576,2014,50,100
+Prairie Trail_576,2015,50,100
+Prairie Trail_576,2016,50,100
+Prairie Trail_576,2017,50,100
+Prairie Trail_576,2018,50,100
+Prairie Trail_576,2019,50,100
+Prairie Trail_577,2007,100,100
+Prairie Trail_577,2008,100,100
+Prairie Trail_577,2009,100,100
+Prairie Trail_577,2010,100,100
+Prairie Trail_577,2011,100,100
+Prairie Trail_577,2012,100,100
+Prairie Trail_577,2013,100,100
+Prairie Trail_577,2014,100,100
+Prairie Trail_577,2015,100,100
+Prairie Trail_577,2016,100,100
+Prairie Trail_577,2017,100,100
+Prairie Trail_577,2018,100,100
+Prairie Trail_577,2019,100,100
+Prairie Trail_578,2007,100,100
+Prairie Trail_578,2008,100,100
+Prairie Trail_578,2009,100,100
+Prairie Trail_578,2010,100,100
+Prairie Trail_578,2011,100,100
+Prairie Trail_578,2013,100,100
+Prairie Trail_578,2014,100,100
+Prairie Trail_578,2015,100,100
+Prairie Trail_578,2016,100,100
+Prairie Trail_578,2017,100,100
+Prairie Trail_578,2019,100,100
+Prairie Trail_579,2007,100,100
+Prairie Trail_579,2008,100,100
+Prairie Trail_579,2009,100,100
+Prairie Trail_579,2011,100,100
+Prairie Trail_579,2013,100,100
+Prairie Trail_579,2014,100,100
+Prairie Trail_579,2015,100,100
+Prairie Trail_579,2016,100,100
+Prairie Trail_579,2017,100,100
+Prairie Trail_579,2018,100,100
+Prairie Trail_579,2019,100,100
+Prairie Trail_580,2007,100,100
+Prairie Trail_580,2008,100,100
+Prairie Trail_580,2009,100,100
+Prairie Trail_580,2011,100,100
+Prairie Trail_580,2013,100,100
+Prairie Trail_580,2015,100,100
+Prairie Trail_580,2016,100,100
+Prairie Trail_580,2017,100,100
+Prairie Trail_580,2018,100,100
+Prairie Trail_580,2019,100,100
+Prairie Trail_581,2007,100,100
+Prairie Trail_581,2009,100,100
+Prairie Trail_581,2011,100,100
+Prairie Trail_581,2013,100,100
+Prairie Trail_581,2015,100,100
+Prairie Trail_581,2016,100,100
+Prairie Trail_581,2017,100,100
+Prairie Trail_581,2018,100,100
+Prairie Trail_581,2019,100,100
+Prairie Trail_582,2007,100,100
+Prairie Trail_582,2008,100,100
+Prairie Trail_582,2009,100,100
+Prairie Trail_582,2011,100,100
+Prairie Trail_582,2013,100,100
+Prairie Trail_582,2015,100,100
+Prairie Trail_582,2016,100,100
+Prairie Trail_582,2017,100,100
+Prairie Trail_582,2018,100,100
+Prairie Trail_582,2019,100,100
+Prairie Trail_583,2007,100,100
+Prairie Trail_583,2008,100,100
+Prairie Trail_583,2009,100,100
+Prairie Trail_583,2011,100,100
+Prairie Trail_583,2013,100,100
+Prairie Trail_583,2014,100,100
+Prairie Trail_583,2015,100,100
+Prairie Trail_583,2016,100,100
+Prairie Trail_583,2017,100,100
+Prairie Trail_583,2019,100,100
+Prairie Trail_584,2007,100,100
+Prairie Trail_584,2013,100,100
+Prairie Trail_584,2014,100,100
+Prairie Trail_584,2015,100,100
+Prairie Trail_584,2016,100,100
+Prairie Trail_584,2017,100,100
+Prairie Trail_584,2019,100,100
+Sofa Mountain_25,2007,210,210
+Sofa Mountain_25,2008,210,210
+Sofa Mountain_25,2009,210,210
+Sofa Mountain_25,2010,210,210
+Sofa Mountain_25,2011,210,210
+Sofa Mountain_25,2012,210,210
+Sofa Mountain_25,2013,210,210
+Sofa Mountain_25,2014,210,210
+Sofa Mountain_25,2015,210,210
+Sofa Mountain_25,2016,210,210
+Sofa Mountain_25,2017,210,210
+Sofa Mountain_25,2018,210,210
+Sofa Mountain_25,2019,210,210
+Sofa Mountain_26,2007,210,210
+Sofa Mountain_26,2008,210,210
+Sofa Mountain_26,2009,210,210
+Sofa Mountain_26,2010,210,210
+Sofa Mountain_26,2011,210,210
+Sofa Mountain_26,2012,210,210
+Sofa Mountain_26,2013,210,210
+Sofa Mountain_26,2014,210,210
+Sofa Mountain_26,2015,210,210
+Sofa Mountain_26,2016,210,210
+Sofa Mountain_26,2017,210,210
+Sofa Mountain_26,2018,210,210
+Sofa Mountain_26,2019,210,210
+Sofa Mountain_27,2007,210,210
+Sofa Mountain_27,2008,210,210
+Sofa Mountain_27,2009,210,210
+Sofa Mountain_27,2010,210,210
+Sofa Mountain_27,2011,210,210
+Sofa Mountain_27,2012,210,210
+Sofa Mountain_27,2013,210,210
+Sofa Mountain_27,2014,210,210
+Sofa Mountain_27,2015,210,210
+Sofa Mountain_27,2016,210,210
+Sofa Mountain_27,2017,210,210
+Sofa Mountain_27,2018,210,210
+Sofa Mountain_27,2019,210,210
+Sofa Mountain_28,2007,210,210
+Sofa Mountain_28,2008,210,210
+Sofa Mountain_28,2009,210,210
+Sofa Mountain_28,2010,210,210
+Sofa Mountain_28,2011,210,210
+Sofa Mountain_28,2012,210,210
+Sofa Mountain_28,2013,210,210
+Sofa Mountain_28,2014,210,210
+Sofa Mountain_28,2015,210,210
+Sofa Mountain_28,2016,210,210
+Sofa Mountain_28,2017,210,210
+Sofa Mountain_28,2018,210,210
+Sofa Mountain_28,2019,210,210
+Sofa Mountain_29,2007,210,210
+Sofa Mountain_29,2008,210,210
+Sofa Mountain_29,2009,210,210
+Sofa Mountain_29,2010,210,210
+Sofa Mountain_29,2011,210,210
+Sofa Mountain_29,2012,210,210
+Sofa Mountain_29,2013,210,210
+Sofa Mountain_29,2014,210,210
+Sofa Mountain_29,2015,210,210
+Sofa Mountain_29,2016,210,210
+Sofa Mountain_29,2017,210,210
+Sofa Mountain_29,2018,210,210
+Sofa Mountain_29,2019,210,210
+Sofa Mountain_30,2007,210,210
+Sofa Mountain_30,2008,210,210
+Sofa Mountain_30,2009,210,210
+Sofa Mountain_30,2010,210,210
+Sofa Mountain_30,2011,210,210
+Sofa Mountain_30,2012,210,210
+Sofa Mountain_30,2013,210,210
+Sofa Mountain_30,2014,210,210
+Sofa Mountain_30,2015,210,210
+Sofa Mountain_30,2016,210,210
+Sofa Mountain_30,2017,210,210
+Sofa Mountain_30,2018,210,210
+Sofa Mountain_30,2019,210,210
+Sofa Mountain_31,2007,210,33
+Sofa Mountain_31,2008,210,33
+Sofa Mountain_31,2009,210,33
+Sofa Mountain_31,2010,210,33
+Sofa Mountain_31,2011,210,33
+Sofa Mountain_31,2012,210,33
+Sofa Mountain_31,2013,210,33
+Sofa Mountain_31,2014,210,33
+Sofa Mountain_31,2015,210,33
+Sofa Mountain_31,2016,210,33
+Sofa Mountain_31,2017,210,33
+Sofa Mountain_31,2018,210,33
+Sofa Mountain_32,2007,50,33
+Sofa Mountain_32,2008,50,33
+Sofa Mountain_32,2009,50,33
+Sofa Mountain_32,2010,50,33
+Sofa Mountain_32,2011,50,33
+Sofa Mountain_32,2012,50,33
+Sofa Mountain_32,2013,50,33
+Sofa Mountain_32,2014,50,33
+Sofa Mountain_32,2015,50,33
+Sofa Mountain_32,2016,50,33
+Sofa Mountain_32,2017,50,33
+Sofa Mountain_32,2018,50,33
+Sofa Mountain_80,2007,50,50
+Sofa Mountain_80,2008,50,50
+Sofa Mountain_80,2009,50,50
+Sofa Mountain_80,2010,50,50
+Sofa Mountain_80,2011,50,50
+Sofa Mountain_80,2012,50,50
+Sofa Mountain_80,2013,50,50
+Sofa Mountain_80,2014,50,50
+Sofa Mountain_80,2015,50,50
+Sofa Mountain_80,2016,50,50
+Sofa Mountain_80,2017,50,50
+Sofa Mountain_80,2018,50,50
+Sofa Mountain_80,2019,50,50
+Sofa Mountain_81,2007,50,50
+Sofa Mountain_81,2009,50,50
+Sofa Mountain_81,2010,50,50
+Sofa Mountain_81,2011,50,50
+Sofa Mountain_81,2012,50,50
+Sofa Mountain_81,2013,50,50
+Sofa Mountain_81,2014,50,50
+Sofa Mountain_81,2015,50,50
+Sofa Mountain_81,2016,50,50
+Sofa Mountain_81,2017,50,50
+Sofa Mountain_81,2018,50,50
+Sofa Mountain_81,2019,50,50
+Wishbone Trail_33,2007,50,33
+Wishbone Trail_33,2008,50,33
+Wishbone Trail_33,2009,50,33
+Wishbone Trail_33,2010,50,33
+Wishbone Trail_33,2011,50,33
+Wishbone Trail_33,2012,50,33
+Wishbone Trail_33,2013,50,33
+Wishbone Trail_33,2014,50,33
+Wishbone Trail_33,2015,50,33
+Wishbone Trail_33,2016,50,33
+Wishbone Trail_33,2017,50,33
+Wishbone Trail_33,2019,50,33
+Wishbone Trail_34,2007,210,33
+Wishbone Trail_34,2008,210,33
+Wishbone Trail_34,2009,210,33
+Wishbone Trail_34,2010,210,33
+Wishbone Trail_34,2011,210,33
+Wishbone Trail_34,2012,210,33
+Wishbone Trail_34,2013,210,33
+Wishbone Trail_34,2014,210,33
+Wishbone Trail_34,2015,210,33
+Wishbone Trail_34,2016,210,33
+Wishbone Trail_34,2017,210,33
+Wishbone Trail_34,2019,210,33
+Wishbone Trail_35,2007,210,210
+Wishbone Trail_35,2008,210,210
+Wishbone Trail_35,2009,210,210
+Wishbone Trail_35,2010,210,210
+Wishbone Trail_35,2011,210,210
+Wishbone Trail_35,2012,210,210
+Wishbone Trail_35,2013,210,210
+Wishbone Trail_35,2014,210,210
+Wishbone Trail_35,2015,210,210
+Wishbone Trail_35,2016,210,210
+Wishbone Trail_35,2017,210,210
+Wishbone Trail_35,2019,210,210
+Wishbone Trail_36,2007,210,33
+Wishbone Trail_36,2008,210,33
+Wishbone Trail_36,2009,210,33
+Wishbone Trail_36,2010,210,33
+Wishbone Trail_36,2011,210,33
+Wishbone Trail_36,2012,210,33
+Wishbone Trail_36,2013,210,33
+Wishbone Trail_36,2014,210,33
+Wishbone Trail_36,2015,210,33
+Wishbone Trail_36,2016,210,33
+Wishbone Trail_36,2017,210,33
+Wishbone Trail_36,2019,210,33
+Wishbone Trail_37,2007,210,33
+Wishbone Trail_37,2008,210,33
+Wishbone Trail_37,2009,210,33
+Wishbone Trail_37,2010,210,33
+Wishbone Trail_37,2011,210,33
+Wishbone Trail_37,2012,210,33
+Wishbone Trail_37,2013,210,33
+Wishbone Trail_37,2014,210,33
+Wishbone Trail_37,2015,210,33
+Wishbone Trail_37,2016,210,33
+Wishbone Trail_37,2017,210,33
+Wishbone Trail_37,2019,210,33
+Wishbone Trail_38,2007,210,210
+Wishbone Trail_38,2008,210,210
+Wishbone Trail_38,2009,210,210
+Wishbone Trail_38,2010,210,210
+Wishbone Trail_38,2012,210,210
+Wishbone Trail_38,2013,210,210
+Wishbone Trail_38,2014,210,210
+Wishbone Trail_38,2015,210,210
+Wishbone Trail_38,2016,210,210
+Wishbone Trail_38,2017,210,210
+Wishbone Trail_38,2019,210,210
+Wishbone Trail_39,2007,50,33
+Wishbone Trail_39,2008,50,33
+Wishbone Trail_39,2009,50,33
+Wishbone Trail_39,2010,50,33
+Wishbone Trail_39,2011,50,33
+Wishbone Trail_39,2012,50,33
+Wishbone Trail_39,2013,50,33
+Wishbone Trail_39,2014,50,33
+Wishbone Trail_39,2015,50,33
+Wishbone Trail_39,2016,50,33
+Wishbone Trail_39,2017,50,33
+Wishbone Trail_39,2019,50,33
+Wishbone Trail_40,2007,33,33
+Wishbone Trail_40,2008,33,33
+Wishbone Trail_40,2009,33,33
+Wishbone Trail_40,2010,33,33
+Wishbone Trail_40,2011,33,33
+Wishbone Trail_40,2012,33,33
+Wishbone Trail_40,2013,33,33
+Wishbone Trail_40,2014,33,33
+Wishbone Trail_40,2015,33,33
+Wishbone Trail_40,2016,33,33
+Wishbone Trail_40,2017,33,33
+Wishbone Trail_40,2019,33,33
+Wishbone Trail_60,2008,210,210
+Wishbone Trail_60,2009,210,210
+Wishbone Trail_60,2010,210,210
+Wishbone Trail_60,2011,210,210
+Wishbone Trail_60,2012,210,210
+Wishbone Trail_60,2014,210,210
+Wishbone Trail_60,2015,210,210
+Wishbone Trail_60,2017,210,210
+Wishbone Trail_60,2019,210,210
+Wishbone Trail_61,2008,210,210
+Wishbone Trail_61,2009,210,210
+Wishbone Trail_61,2010,210,210
+Wishbone Trail_61,2011,210,210
+Wishbone Trail_61,2012,210,210
+Wishbone Trail_61,2014,210,210
+Wishbone Trail_61,2015,210,210
+Wishbone Trail_61,2016,210,210
+Wishbone Trail_61,2017,210,210
+Wishbone Trail_61,2019,210,210
+Yarrow Cabin Trail_567,2007,100,100
+Yarrow Cabin Trail_567,2009,100,100
+Yarrow Cabin Trail_567,2010,100,100
+Yarrow Cabin Trail_567,2011,100,100
+Yarrow Cabin Trail_567,2012,100,100
+Yarrow Cabin Trail_567,2013,100,100
+Yarrow Cabin Trail_567,2014,100,100
+Yarrow Cabin Trail_567,2015,100,100
+Yarrow Cabin Trail_567,2016,100,100
+Yarrow Cabin Trail_567,2017,100,100
+Yarrow Cabin Trail_567,2018,100,100
+Yarrow Cabin Trail_567,2019,100,100
+Yarrow Cabin Trail_568,2007,210,210
+Yarrow Cabin Trail_568,2009,210,210
+Yarrow Cabin Trail_568,2010,210,210
+Yarrow Cabin Trail_568,2011,210,210
+Yarrow Cabin Trail_568,2012,210,210
+Yarrow Cabin Trail_568,2013,210,210
+Yarrow Cabin Trail_568,2014,210,210
+Yarrow Cabin Trail_568,2015,210,210
+Yarrow Cabin Trail_568,2016,210,210
+Yarrow Cabin Trail_568,2017,210,210
+Yarrow Cabin Trail_568,2018,210,210
+Yarrow Cabin Trail_568,2019,210,210
+Yarrow Cabin Trail_569,2007,210,210
+Yarrow Cabin Trail_569,2009,210,210
+Yarrow Cabin Trail_569,2010,210,210
+Yarrow Cabin Trail_569,2011,210,210
+Yarrow Cabin Trail_569,2012,210,210
+Yarrow Cabin Trail_569,2013,210,210
+Yarrow Cabin Trail_569,2014,210,210
+Yarrow Cabin Trail_569,2015,210,210
+Yarrow Cabin Trail_569,2016,210,210
+Yarrow Cabin Trail_569,2017,210,210
+Yarrow Cabin Trail_569,2018,210,210
+Yarrow Cabin Trail_569,2019,210,210
+Yarrow Cabin Trail_570,2007,210,210
+Yarrow Cabin Trail_570,2008,210,210
+Yarrow Cabin Trail_570,2009,210,210
+Yarrow Cabin Trail_570,2010,210,210
+Yarrow Cabin Trail_570,2011,210,210
+Yarrow Cabin Trail_570,2012,210,210
+Yarrow Cabin Trail_570,2013,210,210
+Yarrow Cabin Trail_570,2014,210,210
+Yarrow Cabin Trail_570,2015,210,210
+Yarrow Cabin Trail_570,2016,210,210
+Yarrow Cabin Trail_570,2017,210,210
+Yarrow Cabin Trail_570,2018,210,210
+Yarrow Cabin Trail_570,2019,210,210
+Yarrow Cabin Trail_571,2007,210,210
+Yarrow Cabin Trail_571,2009,210,210
+Yarrow Cabin Trail_571,2010,210,210
+Yarrow Cabin Trail_571,2011,210,210
+Yarrow Cabin Trail_571,2012,210,210
+Yarrow Cabin Trail_571,2013,210,210
+Yarrow Cabin Trail_571,2014,210,210
+Yarrow Cabin Trail_571,2015,210,210
+Yarrow Cabin Trail_571,2016,210,210
+Yarrow Cabin Trail_571,2017,210,210
+Yarrow Cabin Trail_571,2018,210,210
+Yarrow Cabin Trail_571,2019,210,210
+Yarrow Cabin Trail_572,2007,210,210
+Yarrow Cabin Trail_572,2008,210,210
+Yarrow Cabin Trail_572,2009,210,210
+Yarrow Cabin Trail_572,2010,210,210
+Yarrow Cabin Trail_572,2011,210,210
+Yarrow Cabin Trail_572,2012,210,210
+Yarrow Cabin Trail_572,2013,210,210
+Yarrow Cabin Trail_572,2014,210,210
+Yarrow Cabin Trail_572,2015,210,210
+Yarrow Cabin Trail_572,2016,210,210
+Yarrow Cabin Trail_572,2017,210,210
+Yarrow Cabin Trail_572,2018,210,210
+Yarrow Cabin Trail_572,2019,210,210
+Yarrow Cabin Trail_573,2007,210,210
+Yarrow Cabin Trail_573,2008,210,210
+Yarrow Cabin Trail_573,2009,210,210
+Yarrow Cabin Trail_573,2010,210,210
+Yarrow Cabin Trail_573,2011,210,210
+Yarrow Cabin Trail_573,2012,210,210
+Yarrow Cabin Trail_573,2013,210,210
+Yarrow Cabin Trail_573,2014,210,210
+Yarrow Cabin Trail_573,2015,210,210
+Yarrow Cabin Trail_573,2016,210,210
+Yarrow Cabin Trail_573,2017,210,210
+Yarrow Cabin Trail_573,2018,210,210
+Yarrow Cabin Trail_573,2019,210,210
+Yarrow Cabin Trail_574,2007,210,210
+Yarrow Cabin Trail_574,2008,210,210
+Yarrow Cabin Trail_574,2009,210,210
+Yarrow Cabin Trail_574,2010,210,210
+Yarrow Cabin Trail_574,2011,210,210
+Yarrow Cabin Trail_574,2012,210,210
+Yarrow Cabin Trail_574,2013,210,210
+Yarrow Cabin Trail_574,2014,210,210
+Yarrow Cabin Trail_574,2015,210,210
+Yarrow Cabin Trail_574,2016,210,210
+Yarrow Cabin Trail_574,2017,210,210
+Yarrow Cabin Trail_574,2018,210,210
+Yarrow Cabin Trail_574,2019,210,210
+Yarrow Cabin Trail_590,2007,100,100
+Yarrow Cabin Trail_590,2008,100,100
+Yarrow Cabin Trail_590,2009,100,100
+Yarrow Cabin Trail_590,2010,100,100
+Yarrow Cabin Trail_590,2011,100,100
+Yarrow Cabin Trail_590,2012,100,100
+Yarrow Cabin Trail_590,2013,100,100
+Yarrow Cabin Trail_590,2014,100,100
+Yarrow Cabin Trail_590,2015,100,100
+Yarrow Cabin Trail_590,2016,100,100
+Yarrow Cabin Trail_590,2017,100,100
+Yarrow Cabin Trail_590,2018,100,100
+Yarrow Cabin Trail_590,2019,100,100
+Yarrow Cabin Trail_591,2007,50,50
+Yarrow Cabin Trail_591,2008,50,50
+Yarrow Cabin Trail_591,2009,50,50
+Yarrow Cabin Trail_591,2010,50,50
+Yarrow Cabin Trail_591,2012,50,50
+Yarrow Cabin Trail_591,2013,50,50
+Yarrow Cabin Trail_591,2014,50,50
+Yarrow Cabin Trail_591,2015,50,50
+Yarrow Cabin Trail_591,2016,50,50
+Yarrow Cabin Trail_591,2017,50,50
+Yarrow Cabin Trail_591,2018,50,50
+Yarrow Cabin Trail_591,2019,50,50
+AKAMINA-90,2022,210,33
+AKAMINA-91,2022,210,33
+AKAMINA-93,2022,210,33
+AKAMINA-94,2022,210,33
+BLAKISTON-FAN-162,2022,100,100
+BLAKISTON-FAN-163,2022,100,100
+BLAKISTON-FAN-164,2022,100,100
+BLAKISTON-FAN-165,2022,100,100
+BLAKISTON-FAN-166,2022,100,100
+BLAKISTON-FAN-167,2022,100,100
+CAMERON-LAKE-1,2022,210,210
+CAMERON-LAKE-124,2022,210,210
+CAMERON-LAKE-3,2022,210,210
+CAMERON-LAKE-4,2022,210,33
+CAMERON-LAKE-5,2022,210,210
+CAMERON-LAKE-6,2022,210,210
+CARDSTON-ENTRANCE-551,2022,100,100
+CARDSTON-ENTRANCE-552,2022,100,100
+CARDSTON-ENTRANCE-553,2022,100,100
+CARDSTON-ENTRANCE-554,2022,100,100
+CARDSTON-ENTRANCE-555,2022,100,100
+CARDSTON-ENTRANCE-556,2022,100,100
+CARDSTON-ENTRANCE-557,2022,100,100
+CARDSTON-GATE-SOUTH-150,2021,100,100
+CARDSTON-GATE-SOUTH-151,2021,100,100
+CARDSTON-GATE-SOUTH-152,2021,100,100
+CARDSTON-GATE-SOUTH-153,2021,100,100
+CARDSTON-GATE-SOUTH-154,2021,100,100
+CRANDELL-LAKE-100,2022,210,210
+CRANDELL-LAKE-101,2022,210,100
+CRANDELL-LAKE-102,2022,210,33
+CRANDELL-LAKE-103,2022,210,50
+CRANDELL-LAKE-104,2022,210,33
+CRANDELL-LAKE-105,2022,210,50
+ESKERINE-110,2022,100,100
+ESKERINE-111,2022,100,100
+ESKERINE-112,2022,100,100
+ESKERINE-113,2022,50,50
+ESKERINE-114,2022,50,50
+ESKERINE-115,2022,100,100
+ESKERINE-116,2022,100,100
+ESKERINE-117,2022,100,100
+ESKERINE-118,2022,100,100
+ESKERINE-119,2022,100,100
+HORSESHOE-BASIN-41,2022,50,50
+HORSESHOE-BASIN-42,2022,50,50
+HORSESHOE-BASIN-43,2022,220,220
+HORSESHOE-BASIN-44,2022,50,100
+HORSESHOE-BASIN-45,2022,50,50
+HORSESHOE-BASIN-46,2022,50,50
+HORSESHOE-BASIN-47,2022,50,50
+HORSESHOE-BASIN-48,2022,220,100
+HORSESHOE-BASIN-49,2022,50,50
+HORSESHOE-BASIN-50,2022,50,50
+LOWER-MOUNT-CRANDELL-18,2022,230,50
+LOWER-MOUNT-CRANDELL-19,2022,100,100
+LOWER-MOUNT-CRANDELL-20,2022,220,50
+LOWER-MOUNT-CRANDELL-21,2022,210,50
+LOWER-MOUNT-CRANDELL-22,2022,50,50
+LOWER-MOUNT-CRANDELL-23,2022,220,50
+LOWER-MOUNT-CRANDELL-24,2022,210,210
+LOWER-MOUNT-CRANDELL-70,2022,50,50
+LOWER-MOUNT-CRANDELL-71,2022,50,50
+LOWER-MOUNT-CRANDELL-72,2022,100,100
+PRAIRIE-TRAIL-575,2022,50,100
+PRAIRIE-TRAIL-576,2022,100,100
+PRAIRIE-TRAIL-577,2022,100,100
+PRAIRIE-TRAIL-578,2022,100,100
+PRAIRIE-TRAIL-579,2022,100,100
+PRAIRIE-TRAIL-580,2022,100,100
+PRAIRIE-TRAIL-583,2022,100,100
+PRAIRIE-TRAIL-584,2022,100,100
+SOFA-MOUNTAIN-25,2022,210,210
+SOFA-MOUNTAIN-26,2022,210,210
+SOFA-MOUNTAIN-27,2022,210,210
+SOFA-MOUNTAIN-28,2022,210,210
+SOFA-MOUNTAIN-29,2022,220,220
+SOFA-MOUNTAIN-30,2022,50,50
+SOFA-MOUNTAIN-31,2022,50,50
+SOFA-MOUNTAIN-32,2022,50,50
+SOFA-MOUNTAIN-80,2022,220,220
+SOFA-MOUNTAIN-81,2022,50,50
+STONEY-FLATS-156,2022,50,50
+STONEY-FLATS-157,2022,100,100
+STONEY-FLATS-158,2022,50,50
+STONEY-FLATS-159,2022,100,100
+STONEY-FLATS-160,2022,100,100
+STONEY-FLATS-161,2022,100,100
+SUMMIT-LAKE-11,2022,210,33
+SUMMIT-LAKE-12,2022,210,33
+SUMMIT-LAKE-125,2022,210,33
+SUMMIT-LAKE-9,2022,210,33
+WISHBONE-TRAIL-33,2022,80,80
+WISHBONE-TRAIL-34,2022,80,80
+WISHBONE-TRAIL-35,2022,80,80
+WISHBONE-TRAIL-36,2022,80,80
+WISHBONE-TRAIL-37,2022,220,220
+WISHBONE-TRAIL-38,2022,220,220
+WISHBONE-TRAIL-39,2022,220,220
+WISHBONE-TRAIL-40,2022,220,220
+WISHBONE-TRAIL-60,2022,220,220
+WISHBONE-TRAIL-61,2022,220,220
+YARROW-CABIN-TRAIL-567,2022,210,210
+YARROW-CABIN-TRAIL-568,2022,210,210
+YARROW-CABIN-TRAIL-569,2022,210,210
+YARROW-CABIN-TRAIL-570,2022,210,210
+YARROW-CABIN-TRAIL-571,2022,210,210
+YARROW-CABIN-TRAIL-572,2022,210,210
+YARROW-CABIN-TRAIL-573,2022,210,210
+YARROW-CABIN-TRAIL-574,2022,210,210
+YARROW-CABIN-TRAIL-590,2022,50,50
+YARROW-CABIN-TRAIL-591,2022,220,220
