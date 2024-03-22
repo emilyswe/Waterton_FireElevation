@@ -1,4 +1,4 @@
-packs<-c("runjags","beepr","rjags")
+packs<-c("runjags","beepr","BiocManager")
 for(q in 1:length(packs)) 
 	if (!require(packs[q], character.only = TRUE)) 
 		{
@@ -6,6 +6,7 @@ for(q in 1:length(packs))
 			require(packs[q])
 		}
 		
+if (!require("ComplexHeatmap", character.only = TRUE)) BiocManager::install("ComplexHeatmap")
 		
 csv<-read.csv("04_Cleaned_Waterton.csv")
 
@@ -286,7 +287,7 @@ for(q in 1:hms) {
 
 lbrary(ComplexHeatmap)
 
-Heatmap(reeta, 
+jm<- Heatmap(reeta, 
         cluster_columns = FALSE, 
         cluster_rows = FALSE, 
         show_column_names = TRUE, 
