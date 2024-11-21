@@ -1,0 +1,31 @@
+model{
+	alpha ~ dnorm(0, 1e-2)
+
+	for(q in 1:nsp) {
+		alpha_sp[q] ~ dnorm(0, 1e-2)
+		#yrs
+		for(w in 1:ny){
+			beta_yr[q,w]~dnorm(0, 1e-2)
+		}
+		for(w in 1:nlc){
+			beta_lc[q,w]~dnorm(0, 1e-2)
+		}
+		for(w in 1:nsev){
+			beta_sev[q,w]~dnorm(0, 1e-2)
+		}
+		for(w in 1:2){
+			beta_cf[q,w]~dnorm(0, 1e-2)
+		}
+		beta_ele[q]~dnorm(0,1e-2)
+		beta_slo[q]~dnorm(0,1e-2)
+		beta_asp[q]~dnorm(0,1e-2)
+		beta_tpi[q]~dnorm(0,1e-2)
+		beta_north[q]~dnorm(0,1e-2)
+		
+	}
+
+	for(q in 1:hmo) {
+		resp[q]~dpois(lam[q])
+		log(lam[q])=alpha+alpha_sp[wsp[q]]+beta_yr[wsp[q],yr[q]]+beta_lc[wsp[q],lc[q]]+beta_sev[wsp[q],sev[q]]+beta_ele[wsp[q]]*ele[q]+beta_slo[wsp[q]]*slo[q]+beta_asp[wsp[q]]*asp[q]+beta_tpi[wsp[q]]*tpi[q]+beta_north[wsp[q]]*north[q]+beta_cf[wsp[q],cf[q]]
+	}
+}	
