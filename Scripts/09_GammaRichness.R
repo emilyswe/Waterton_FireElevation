@@ -1,3 +1,151 @@
+##Gamma richness rarefaction using single visit type A species
+#Updated March 25 2025
+# Gamma Richness Script - Step 09
+
+# 1. Load Required Packages ----
+library(dplyr)
+library(ggplot2)
+library(readr)
+
+# 2. Load Data ----
+emda4 <- read_csv("Output/07_cleaned_single_visit_filtered.csv")
+
+# 3. Generate Elevation + Burn Strata ----
+location_data <- emda4 |>
+  select(location, latitude, longitude, elevation, grid.code) |>
+  distinct()
+
+location_data$altbin <- cut(location_data$elevation,
+                            breaks = quantile(location_data$elevation, probs = c(0, 1/3, 2/3, 1), na.rm = TRUE),
+                            labels = FALSE, include.lowest = TRUE)
+
+location_data$strata <- ifelse(location_data$grid.code > 0,
+                               location_data$altbin + 3,
+                               location_data$altbin)
+
+superdata <- left_join(emda4, location_data, by = "location")
+
+# 4. Calculate Gamma Richness ----
+species_columns <- colnames(emda4)[grepl("^[A-Z]{4}$", colnames(emda4))]
+n_replicates <- 100
+n_sampling_points <- seq(10, 100, by = 10)
+
+calculate_richness <- function(data, n) {
+  if (nrow(data) < n) n <- nrow(data)
+  sample_data <- data[sample(nrow(data), n, replace = TRUE), species_columns, drop = FALSE]
+  sum(colSums(sample_data > 0, na.rm = TRUE) > 0)
+}
+
+gari <- do.call(rbind, lapply(sort(unique(superdata$strata)), function(stratum) {
+  stratum_data <- superdata[superdata$strata == stratum, ]
+  do.call(rbind, lapply(n_sampling_points, function(n) {
+    replicate(n_replicates, {
+      data.frame(
+        strata = stratum,
+        numpc = n,
+        richness = calculate_richness(stratum_data, n)
+      )
+    }, simplify = FALSE) |> bind_rows()
+  }))
+}))
+
+# 5. Summarize Richness and Calculate Poisson CIs ----
+gari_stats <- gari |>
+  group_by(strata, numpc) |>
+  summarise(
+    mean_richness = mean(richness),
+    l95 = qpois(0.025, mean_richness),
+    u95 = qpois(0.975, mean_richness),
+    .groups = "drop"
+  )
+
+# 6. Add Labels for Faceting ----
+gari_stats <- gari_stats |>
+  mutate(
+    treatment = ifelse(strata <= 3, "Unburned", "Burned"),
+    elevation = case_when(
+      strata %in% c(1, 4) ~ "Low elevation",
+      strata %in% c(2, 5) ~ "Mid elevation",
+      strata %in% c(3, 6) ~ "High elevation"
+    ),
+    elevation = factor(elevation, levels = c("Low elevation", "Mid elevation", "High elevation"))
+  )
+
+# Save summarized data
+write_csv(gari_stats, "Output/09_Gamma/filtered_poisson_gamma_richness_6strata.csv")
+
+# 7. Elly-Style Plot ----
+plot_gamma <- ggplot(gari_stats) +
+  geom_ribbon(aes(x = numpc, ymin = l95, ymax = u95, colour = treatment),
+              alpha = 0.2, linetype = "dashed", linewidth = 0.5) +
+  geom_line(aes(x = numpc, y = mean_richness, colour = treatment), linewidth = 1) +
+  scale_color_manual(values = c("Unburned" = "steelblue3", "Burned" = "tomato3"), name = "") +
+  facet_wrap(~elevation) +
+  labs(x = "Number of Surveys", y = "Cumulative Number of Species") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+ggsave(
+  filename = "Output/09_Gamma/09_gamma_richness_faceted_plot.png",
+  plot = plot_gamma,
+  width = 10,
+  height = 5,
+  dpi = 300,
+  bg = "white"  # fixes the dark background issue
+)
+
+# Display
+plot_gamma
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+#old code for gamma richness refering to both the multi and single visit dfs 
+
 # Gamma Richness Script - Step 09
 #Uses the single visit dataset
 
@@ -13,7 +161,7 @@ for (q in 1:length(packs)) {
 }
 
 # 2. Read in the required data from previous steps ----
-emda4 <- read.csv("Output/07_cleaned_single_visit_data.csv")
+emda4 <- read.csv("Output/07_cleaned_single_visit_filtered.csv")
 
 #emda1 <- read.csv("Output/07_cleaned_multivisit_data.csv")
 
@@ -87,16 +235,20 @@ for (stratum in strata) {
 # Rename columns appropriately
 colnames(gari) <- c("strata", "replicate", "numpc", "richness")
 
-# Calculate summary statistics
+# Calculate summary statistics with Poisson CIs
 gari_stats <- gari %>%
   group_by(strata, numpc) %>%
   summarise(
     mean_richness = mean(richness, na.rm = TRUE),
     sd_richness = sd(richness, na.rm = TRUE),
-    l95 = mean_richness - 1.96 * sd_richness,
-    u95 = mean_richness + 1.96 * sd_richness,
+    
+    # Poisson-based lower and upper 95% CIs
+    l95 = qpois(0.025, mean_richness),  # Lower 95% Poisson CI
+    u95 = qpois(0.975, mean_richness),  # Upper 95% Poisson CI
+    
     .groups = 'drop'
   )
+
 
 # Label definitions for strata
 strata_labels <- c("Low Elev. Unburned", "Mid. Elev. Unburned", "High Elev. Unburned",
@@ -107,7 +259,7 @@ names(strata_labels) <- 1:6
 gari_stats$strata_label <- strata_labels[as.character(gari_stats$strata)]
 
 # Save the summary results
-write.csv(gari_stats, "Output/09_waterton_gamma_richness_6strata.csv", row.names = FALSE)
+write.csv(gari_stats, "Output/09_Gamma/filtered_poisson_gamma_richness_6strata.csv", row.names = FALSE)
 
 # 5. Plot ----
 
@@ -131,12 +283,12 @@ plot_mid_burned <- generate_plot(gari_stats, 5)
 plot_high_burned <- generate_plot(gari_stats, 6)
 
 # Save the plots
-ggsave("Output/09_gamma_richness_low_unburned.png", plot = plot_low_unburned, width = 8, height = 6)
-ggsave("Output/09_gamma_richness_mid_unburned.png", plot = plot_mid_unburned, width = 8, height = 6)
-ggsave("Output/09_gamma_richness_high_unburned.png", plot = plot_high_unburned, width = 8, height = 6)
-ggsave("Output/09_gamma_richness_low_burned.png", plot = plot_low_burned, width = 8, height = 6)
-ggsave("Output/09_gamma_richness_mid_burned.png", plot = plot_mid_burned, width = 8, height = 6)
-ggsave("Output/09_gamma_richness_high_burned.png", plot = plot_high_burned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_low_unburned.png", plot = plot_low_unburned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_mid_unburned.png", plot = plot_mid_unburned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_high_unburned.png", plot = plot_high_unburned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_low_burned.png", plot = plot_low_burned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_mid_burned.png", plot = plot_mid_burned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_high_burned.png", plot = plot_high_burned, width = 8, height = 6)
 
 ## If there are warnings, investigate 
 summary(gari_stats)
@@ -172,6 +324,19 @@ plot_mid_comparison <- generate_comparative_plot(gari_stats, 2, 5)
 plot_high_comparison <- generate_comparative_plot(gari_stats, 3, 6)
 
 # Save the comparative plots
-ggsave("Output/09_gamma_richness_low_comparison.png", plot = plot_low_comparison, width = 8, height = 6)
-ggsave("Output/09_gamma_richness_mid_comparison.png", plot = plot_mid_comparison, width = 8, height = 6)
-ggsave("Output/09_gamma_richness_high_comparison.png", plot = plot_high_comparison, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_low_comparison.png", plot = plot_low_comparison, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_mid_comparison.png", plot = plot_mid_comparison, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_high_comparison.png", plot = plot_high_comparison, width = 8, height = 6)
+
+#summarize key results
+key_results <- gari_stats %>%
+  filter(numpc == max(numpc)) %>%
+  select(strata_label, mean_richness, l95, u95)
+print(key_results)
+
+
+
+
+
+
+

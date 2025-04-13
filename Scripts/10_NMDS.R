@@ -1,194 +1,307 @@
-#STEP 10: NMDS
+# NMDS and PERMANOVA using single visit type A dataset and bray-curtis 
+# Updated March 25 2025
 
-#setwd
+# 1. Load Required Packages ----
+library(dplyr)
+library(vegan)
+library(ggplot2)
+library(readr)
+
+# 2. Load Filtered Dataset ----
+emda4 <- read_csv("Output/07_cleaned_single_visit_filtered.csv")
+
+# 3. Add Elevation × Burn Strata ----
+if (!"strata" %in% colnames(emda4)) {
+  location_data <- emda4 |>
+    select(location, latitude, longitude, elevation, grid.code) |>
+    distinct()
+  
+  location_data$altbin <- cut(location_data$elevation,
+                              breaks = quantile(location_data$elevation, probs = c(0, 1/3, 2/3, 1), na.rm = TRUE),
+                              labels = FALSE, include.lowest = TRUE)
+  
+  location_data$strata <- ifelse(location_data$grid.code > 0,
+                                 location_data$altbin + 3,
+                                 location_data$altbin)
+  
+  emda4 <- left_join(emda4, location_data[, c("location", "strata")], by = "location")
+}
+
+# 4. Prepare Data for NMDS ----
+species_columns <- grep("^[A-Z]{4}$", colnames(emda4), value = TRUE)
+
+nmds_data <- emda4 |>
+  filter(!is.na(strata)) |>
+  select(location, strata, latitude, longitude, elevation, all_of(species_columns))
+
+species_matrix <- nmds_data[, species_columns]
+
+# Remove rows with no species present
+non_zero_rows <- rowSums(species_matrix) > 0
+species_matrix <- species_matrix[non_zero_rows, , drop = FALSE]
+nmds_data <- nmds_data[non_zero_rows, ]
+
+# 5. Run NMDS ----
+set.seed(999)
+# Use Bray-Curtis for abundance data (instead of Jaccard which is for presence/absence)
+nmds_result <- metaMDS(species_matrix, distance = "bray", k = 2, trymax = 100)
+
+# Extract scores
+nmds_coords <- scores(nmds_result, display = "sites") |> as.data.frame()
+nmds_data$mdsA <- nmds_coords$NMDS1
+nmds_data$mdsB <- nmds_coords$NMDS2
+
+# Save scores
+write_csv(nmds_data[, c("location", "strata", "mdsA", "mdsB")], "Output/10_NMDS/waterton_nmds_2axis_EMDA.csv")
+
+# 6. NMDS Plot (Elly Style) ----
+dat3 <- read_csv("Output/10_NMDS/waterton_nmds_2axis_EMDA.csv") |>
+  mutate(
+    treatment = ifelse(strata %in% c(1:3), "Unburned", "Burned"),
+    elevation = case_when(
+      strata %in% c(1, 4) ~ "Low elevation",
+      strata %in% c(2, 5) ~ "Mid elevation",
+      strata %in% c(3, 6) ~ "High elevation"
+    ),
+    elevation = factor(elevation, levels = c("Low elevation", "Mid elevation", "High elevation"))
+  )
+
+plot3 <- ggplot(dat3, aes(x = mdsA, y = mdsB)) +
+  stat_ellipse(aes(colour = treatment, linetype = elevation), level = 0.68, linewidth = 1) +
+  scale_color_manual(values = c("Burned" = "tomato3", "Unburned" = "steelblue3"), name = "") +
+  scale_linetype_manual(values = c("solid", "dotted", "dashed"), name = "") +
+  theme_minimal() +
+  theme(legend.position = "right") +
+  labs(x = "NMDS axis 1", y = "NMDS axis 2")
+
+ggsave("Output/10_NMDS/10_nmds_plot_final.png", plot = plot3, width = 8, height = 6, dpi = 300, bg = "white")
+
+# 7. PERMANOVA ----
+env_data <- nmds_data |>
+  mutate(
+    treatment = ifelse(strata %in% c(1:3), "Unburned", "Burned"),
+    elevation = case_when(
+      strata %in% c(1, 4) ~ "Low elevation",
+      strata %in% c(2, 5) ~ "Mid elevation",
+      strata %in% c(3, 6) ~ "High elevation"
+    )
+  ) |>
+  select(treatment, elevation)
+
+set.seed(999)
+# Again, use Bray-Curtis here to match the NMDS method
+permanova_result <- adonis2(species_matrix ~ treatment * elevation,
+                            data = env_data,
+                            method = "bray",
+                            permutations = 999)
+
+write_csv(as.data.frame(permanova_result), "Output/10_NMDS/permanova_results.csv")
+print(permanova_result)
+
+
+##get delta AIC values 
+
+# Full model with interaction
+full_model <- adonis2(species_matrix ~ treatment * elevation, data = env_data, method = "bray", permutations = 999)
+
+# Additive model
+additive_model <- adonis2(species_matrix ~ treatment + elevation, data = env_data, method = "bray", permutations = 999)
+
+# Elevation only
+elevation_model <- adonis2(species_matrix ~ elevation, data = env_data, method = "bray", permutations = 999)
+
+# Treatment only
+treatment_model <- adonis2(species_matrix ~ treatment, data = env_data, method = "bray", permutations = 999)
+
+# Extract AIC values and calculate ΔAIC manually (pseudo-AIC based on residuals and df)
+aics <- c(
+  full_model = full_model$aic,
+  additive_model = additive_model$aic,
+  elevation_model = elevation_model$aic,
+  treatment_model = treatment_model$aic
+)
+delta_aic <- aics - min(aics)
+
+# Save delta AIC results
+write.csv(data.frame(Model = names(delta_aic), AIC = aics, Delta_AIC = delta_aic), 
+          "Output/10_NMDS/permanova_model_comparisons.csv", row.names = FALSE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+####################################
+#old code for nmds and permanova refering to both the multi and single visit dfs 
+
+# NMDS Analysis Script - Step 10
+
+#re-run without removing the zeros but use Bray-Curtis instead (Feb 5 2025 note)
+
+# Set working directory
 setwd("/Users/Bronwyn/Documents/local-git/Waterton_FireElevation")
 
-# 1. Load required packages ----
- packs <- c("vegan", "dplyr", "ggplot2", "tidyverse")
- for (q in 1:length(packs)) {
-    if (!require(packs[q], character.only = TRUE)) {
-       install.packages(packs[q])
-        require(packs[q])
-      }
-   }
-
-# 2. Read in Cleaned Multi-visit and Single-visit Datasets ----
-emda1 <- read.csv("Output/07_cleaned_multivisit_data.csv")  # Multi-visit dataset
-emda4 <- read.csv("Output/07_cleaned_single_visit_data.csv")  # Single-visit dataset
-
-# 3. Merge Necessary Columns ----
-# Merge latitude, longitude, elevation, etc. from emda4 into emda1 (multi-visit)
-superdata <- left_join(emda1, 
-                       emda4 %>% dplyr::select(location, latitude, longitude, elevation, slope, aspect, TPI, northness, grid.code, burnYN, burnBA) %>%
-                         unique(), 
-                       by = "location")
-
-# 4. Fix Column Names After Merge ----
-# Remove .x and .y suffixes
-colnames(superdata) <- gsub("\\.x$", "", colnames(superdata))  # Remove .x suffixes
-colnames(superdata) <- gsub("\\.y$", "", colnames(superdata))  # Remove .y suffixes
-
-# 5. Check if Elevation Exists and Is Numeric ----
-# Validate that 'elevation' column was successfully merged and is numeric
-if (!"elevation" %in% colnames(superdata)) {
-  stop("Error: Elevation column is missing from superdata.")
+# Load required packages
+packs <- c("dplyr", "vegan", "ggplot2")
+for (q in 1:length(packs)) {
+  if (!require(packs[q], character.only = TRUE)) {
+    install.packages(packs[q])
+    require(packs[q])
+  }
 }
 
-# Check for missing elevation values
-if (any(is.na(superdata$elevation))) {
-  stop("Error: Missing values detected in the elevation column after merging.")
+# Read in the filtered single visit dataset
+emda4 <- read.csv("Output/07_cleaned_single_visit_filtered.csv")
+
+# Add strata column if not already present
+if (!"strata" %in% colnames(emda4)) {
+  location_data <- data.frame(location = unique(emda4$location))
+  
+  for (q in 1:nrow(location_data)) {
+    location_data$latitude[q] <- emda4$latitude[emda4$location == location_data$location[q]][1]
+    location_data$longitude[q] <- emda4$longitude[emda4$location == location_data$location[q]][1]
+    location_data$altitude[q] <- emda4$elevation[emda4$location == location_data$location[q]][1]
+    location_data$severity[q] <- emda4$grid.code[emda4$location == location_data$location[q]][1]
+  }
+  
+  location_data$altbin <- cut(location_data$altitude, 
+                              breaks = quantile(location_data$altitude, probs = c(0, 1/3, 2/3, 1), na.rm = TRUE), 
+                              labels = FALSE, include.lowest = TRUE)
+  location_data$strata <- ifelse(location_data$severity > 0, 
+                                 location_data$altbin + 3, 
+                                 location_data$altbin)
+  
+  emda4 <- left_join(emda4, location_data[, c("location", "strata")], by = "location")
 }
 
-# Ensure 'elevation' is numeric
-if (!is.numeric(superdata$elevation)) {
-  superdata$elevation <- as.numeric(superdata$elevation)
+# Define species columns
+species_columns <- grep("^[A-Z]{4}$", colnames(emda4), value = TRUE)
+
+# Create nmds_data and species_matrix
+nmds_data <- emda4 %>%
+  filter(!is.na(strata)) %>%
+  select(location, strata, latitude, longitude, elevation, all_of(species_columns))
+
+species_matrix <- nmds_data[, species_columns]
+
+# Remove rows with no species present (zeros) from both datasets
+non_zero_rows <- rowSums(species_matrix) > 0
+species_matrix <- species_matrix[non_zero_rows, , drop = FALSE]  # Ensure matrix format
+nmds_data <- nmds_data[non_zero_rows, ]
+
+# Verify dimensions match
+if (nrow(species_matrix) != nrow(nmds_data)) {
+  stop("Mismatch between species_matrix and nmds_data rows after filtering.")
 }
 
-# 5. Create Strata Based on Altitude and Burn Severity ----
-# This replicates Elly's logic of using elevation and grid code to define strata
-superdata$altbin <- cut(superdata$elevation, 
-                        breaks = quantile(superdata$elevation, probs = c(0, 1/3, 2/3, 1), na.rm = TRUE), 
-                        labels = FALSE, include.lowest = TRUE)
-
-# Adjust strata based on burn severity
-superdata$strata <- ifelse(superdata$grid.code > 0, superdata$altbin + 3, superdata$altbin)
-
-# 6. Identify Species Columns ----
-# Use a regular expression to identify the 4-letter uppercase bird species codes
-species_columns <- colnames(superdata)[grep("^[A-Z]{4}$", colnames(superdata))]
-
-# 7. Prepare Data for NMDS ----
-# Remove non-species columns, ensuring species columns are sorted alphabetically
-non_species_columns <- setdiff(colnames(superdata), species_columns)
-species_columns_sorted <- sort(species_columns)
-
-# Create wide data format needed for NMDS
-wide_data <- superdata[c(non_species_columns, species_columns_sorted)]
-
-# Filter to ensure no missing strata and sample one observation per location
-filtered_data <- wide_data %>%
-  dplyr::filter(!is.na(strata)) %>%
-  group_by(location) %>%
-  slice_sample(n = 1)
-
-# 8. Perform NMDS ----
-# Run NMDS using species data, distance = jaccard, and k = 2
+# Run NMDS
 set.seed(999)
-nmds_result <- metaMDS(filtered_data[, species_columns_sorted], distance = "jaccard", k = 2, trymax = 100)
+nmds_result <- metaMDS(species_matrix, distance = "jaccard", k = 2, trymax = 100)
 
-# 9. Save NMDS Results ----
-# Extract NMDS coordinates for each site
-coordinates <- scores(nmds_result, display = "sites")
-filtered_data$mdsA <- coordinates[, 1]
-filtered_data$mdsB <- coordinates[, 2]
+# Extract NMDS scores and add to nmds_data
+nmds_coords <- as.data.frame(scores(nmds_result, display = "sites"))
+nmds_data$mdsA <- nmds_coords[, 1]
+nmds_data$mdsB <- nmds_coords[, 2]
 
-# Save the results as a CSV
-write.csv(filtered_data[, c("location", "strata", "doy", "year", "mdsA", "mdsB")],  "Output/10_nmds_2axis.csv", row.names = FALSE)
+# Save the NMDS result for plotting
+write.csv(nmds_data[, c("location", "strata", "mdsA", "mdsB")], 
+          "Output/10_NMDS/waterton_nmds_2axis_EMDA.csv", row.names = FALSE)
 
-# 10. NMDS Plot ----
-# Calculate mean NMDS scores for each strata to add group labels
-means <- aggregate(cbind(mdsA, mdsB) ~ strata, data = filtered_data, mean)
+#######plot
 
-# Create the NMDS plot
-nmds_plot <- ggplot(filtered_data, aes(x = mdsA, y = mdsB, color = factor(strata))) +
-  geom_point(aes(shape = factor(strata))) +
-  scale_color_manual(values = c("green", "green", "green", "orange", "orange", "orange")) +
-  geom_text(data = means, aes(label = factor(strata)), vjust = 2, color = "black") +
-  stat_ellipse(aes(fill = factor(strata)), geom = "polygon", level = 0.95, alpha = 0.2) +
-  labs(color = "Strata", shape = "Strata", fill = "Confidence") +
-  theme_bw() +
-  theme(legend.position = "right")
-
-# Save the plot
-ggsave("Output/10_nmds_plot.png", plot = nmds_plot, width = 8, height = 6)
-
-#cleaned plot ----
-
-dat3 <- read.csv("Output/10_waterton_mds_2axis.csv") |> 
+# Read in the NMDS result CSV
+dat3 <- read.csv("Output/10_NMDS/waterton_nmds_2axis_EMDA.csv") |> 
   mutate(treatment = ifelse(strata %in% c(1:3), "Unburned", "Burned"),
          elevation = case_when(strata %in% c(1, 4) ~ "Low elevation", 
                                strata %in% c(2, 5) ~ "Mid elevation",
                                strata %in% c(3, 6) ~ "High elevation"),
          elevation = factor(elevation, levels=c("Low elevation", "Mid elevation", "High elevation")))
 
-linelegend <- data.frame(expand.grid(x=1, y=1, elevation=unique(dat3$elevation)))
+# Filter out the outlier AFTER reading the CSV
+dat3 <- dat3 %>% filter(location != "WLNP-12-1")
+
+# Check summary to confirm outlier is removed
+summary(dat3$mdsA)
+
+# Create the legend data for plot
+linelegend <- data.frame(expand.grid(x = 1, y = 1, elevation = unique(dat3$elevation)))
 
 plot3 <- ggplot(dat3, aes(x = mdsA, y = mdsB)) +
-  stat_ellipse(aes(colour=treatment, linetype=elevation), geom = "polygon", level = 0.5, fill="white", alpha = 0, linewidth=1)
-  #  geom_point(aes(shape = elevation, colour=treatment)) + 
-  geom_line(aes(x=x, y=y, linetype=elevation), data=linelegend) +
-  scale_color_manual(values=c("steelblue3", "tomato3"),name="") +
-  scale_linetype_manual(values=c("solid", "dotted", "dashed"), name="") +
+  stat_ellipse(aes(colour = treatment, linetype = elevation), level = 0.68, linewidth = 1) +
+  scale_color_manual(values = c("tomato3", "steelblue3"), name = "") +  # Burned = Red, Unburned = Blue
+  scale_linetype_manual(values = c("solid", "dotted", "dashed"), name = "") +  # More distinct line types
   theme_minimal() +
   theme(legend.position = "right") +
-  xlim(c(-0.003, 0.006)) +
-  ylim(c(-0.006, 0.005)) +
   labs(x = "NMDS axis 1",
        y = "NMDS axis 2")
 plot3
-
-ggsave(plot3, filename="Output/10_NMDS_Clean.jpeg", width=8, height=6)
-
-
-
-#gpt check
-sum(is.na(dat3$mdsA) | is.infinite(dat3$mdsA))
-sum(is.na(dat3$mdsB) | is.infinite(dat3$mdsB))
-
-unique(dat3$strata)
-
-table(dat3$treatment, dat3$elevation)
-
-dat3 %>%
-  group_by(treatment, elevation) %>%
-  summarize(count = n())
-
-
-linelegend
-
-print(unique(dat3$elevation))
-print(linelegend)
-
-
-dat3 %>%
-  group_by(treatment, elevation) %>%
-  summarize(count = n()) %>%
-  print()
-
-# Check for rows where mdsA or mdsB is non-finite (NA, NaN, Inf)
-dat3 %>%
-  filter(!is.finite(mdsA) | !is.finite(mdsB)) %>%
-  print()
-
-dat3 %>%
-  group_by(strata) %>%
-  summarize(count = n()) %>%
-  print()
-
-plot3 <- ggplot(dat3, aes(x = mdsA, y = mdsB, color = treatment)) +
-  geom_point(aes(shape = elevation)) + 
-  scale_color_manual(values = c("steelblue3", "tomato3"), name = "") +
-  theme_minimal() +
-  theme(legend.position = "right") +
-  xlim(c(-0.003, 0.006)) +
-  ylim(c(-0.006, 0.005)) +
-  labs(x = "NMDS axis 1", y = "NMDS axis 2")
-
 # Save the plot
-ggsave(plot3, filename = "Output/10_NMDS_PointsOnly.jpeg", width = 8, height = 6)
-print(plot3)
-
-# Check for missing or non-finite values in other relevant columns
-sum(is.na(dat3$strata) | is.infinite(dat3$strata))
-sum(is.na(dat3$treatment) | is.infinite(dat3$treatment))
-sum(is.na(dat3$elevation) | is.infinite(dat3$elevation))
+ggsave(plot3, filename = "Output/10_NMDS/NMDS_EMDA.jpeg", width = 8, height = 6)
 
 
+#PERMANOVA
 
+# Ensure species_matrix is a matrix
+species_matrix <- as.matrix(species_matrix)
 
+# Prepare environmental variables for PERMANOVA
+env_data <- nmds_data %>%
+  mutate(
+    treatment = ifelse(strata %in% c(1, 2, 3), "Unburned", "Burned"),
+    elevation = case_when(
+      strata %in% c(1, 4) ~ "Low elevation",
+      strata %in% c(2, 5) ~ "Mid elevation",
+      strata %in% c(3, 6) ~ "High elevation"
+    )
+  ) %>%
+  select(treatment, elevation)  # Select only relevant columns for PERMANOVA
 
+# Check dimensions match before PERMANOVA
+if (nrow(species_matrix) != nrow(env_data)) {
+  stop("Mismatch between species_matrix and env_data rows. Check filtering steps.")
+}
 
+# Run PERMANOVA
+set.seed(999)
+permanova_result <- adonis2(
+  species_matrix ~ treatment * elevation, 
+  data = env_data, 
+  method = "jaccard", 
+  permutations = 999
+)
 
+# Display PERMANOVA results
+print(permanova_result)
 
-
-
+# Save PERMANOVA results to file
+write.csv(as.data.frame(permanova_result), "Output/10_NMDS/permanova_results.csv", row.names = TRUE)

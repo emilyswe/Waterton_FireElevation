@@ -1,3 +1,318 @@
+################################# Updated March 21 2025
+# Run models and collect results
+results_list <- lapply(species_columns, function(species) compare_models(species, model_data))
+names(results_list) <- species_columns
+
+# Combine all model comparisons
+bic_all <- rbindlist(lapply(results_list, function(x) x[[1]]), use.names = TRUE, fill = TRUE)
+write.csv(bic_all, "Output/11_SingleSpecies/11_BestModelSelection.csv", row.names = FALSE)
+
+# Combine all predictions
+pred_all <- rbindlist(lapply(results_list, function(x) x[[2]]), use.names = TRUE, fill = TRUE)
+write.csv(pred_all, "Output/11_SingleSpecies/11_Predictions.csv", row.names = FALSE)
+
+# Done!
+cat("✅ Model fitting complete. BIC and prediction outputs saved.")
+
+
+
+###########plotting code
+library(ggplot2)
+library(dplyr)
+
+# Load predictions
+dat4 <- read.csv("Output/11_SingleSpecies/11_Predictions.csv") |> 
+  rename(elevation = x, burnYN = group) |> 
+  mutate(burnYN = factor(burnYN, levels = c("1", "0"), labels = c("Burned", "Unburned"))) |> 
+  filter(!is.na(species), !model %in% c("burnONLY", "linearALT")) |> 
+  arrange(species, elevation, burnYN)
+
+# Define correct colors: Burned = red, Unburned = blue
+correct_colors <- c("Burned" = "tomato3", "Unburned" = "steelblue3")
+
+# Burn interaction models
+plot_burn_int <- ggplot(dat4 |> filter(model %in% c("linearINT", "quadINT"))) +
+  geom_ribbon(aes(x = elevation, ymin = conf.low, ymax = conf.high, fill = burnYN), 
+              linetype = "dashed", linewidth = 0.5, alpha = 0.2) +
+  geom_line(aes(x = elevation, y = predicted, color = burnYN), linewidth = 1) +
+  scale_color_manual(values = correct_colors, name = "") +
+  scale_fill_manual(values = correct_colors, name = "") +
+  facet_wrap(~species, scales = "free", ncol = 4) +
+  theme_minimal() +
+  labs(y = "Probability of occurrence", x = "Elevation (meters)") +
+  theme(legend.position = "bottom")
+
+ggsave("Output/11_SingleSpecies/11_SingleSpecies_BurnInteraction.jpeg", plot = plot_burn_int, width = 10, height = 6)
+
+# Burn additive models
+plot_burn_main <- ggplot(dat4 |> filter(model %in% c("linearMAIN", "quadMAIN"),
+                                        !species %in% c("CAVI"))) +
+  geom_ribbon(aes(x = elevation, ymin = conf.low, ymax = conf.high, fill = burnYN), 
+              linetype = "dashed", linewidth = 0.5, alpha = 0.2) +
+  geom_line(aes(x = elevation, y = predicted, color = burnYN), linewidth = 1) +
+  scale_color_manual(values = correct_colors, name = "") +
+  scale_fill_manual(values = correct_colors, name = "") +
+  facet_wrap(~species, scales = "free", ncol = 4) +
+  theme_minimal() +
+  labs(y = "Probability of occurrence", x = "Elevation (meters)") +
+  theme(legend.position = "bottom")
+
+ggsave("Output/11_SingleSpecies/11_SingleSpecies_BurnAdditive.jpeg", plot = plot_burn_main, width = 10, height = 6)
+
+# Altitude-only models
+plot_alt <- ggplot(dat4 |> filter(model %in% c("quadALT"))) +
+  geom_ribbon(aes(x = elevation, ymin = conf.low, ymax = conf.high), 
+              linetype = "dashed", linewidth = 0.5, alpha = 0.2) +
+  geom_line(aes(x = elevation, y = predicted), linewidth = 1) +
+  facet_wrap(~species, scales = "free", ncol = 4) +
+  theme_minimal() +
+  labs(y = "Probability of occurrence", x = "Elevation (meters)")
+
+ggsave("Output/11_SingleSpecies/11_SingleSpecies_Altitude.jpeg", plot = plot_alt, width = 10, height = 12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################################
+#################################
+#################################
+#################################
+#################################
+#################################
+#################################
+#################################
+#################################
+#################################
+
+
+
+#Updated March 20 2025 
+
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(lme4)
+
+# Load dataset
+single_species_data <- read.csv("Output/07_singlevisit_typeA.csv")
+
+# Ensure burnYN is a factor
+single_species_data$burnYN <- factor(single_species_data$burnYN, levels = c("0", "1"))
+
+# Automatically detect species columns using regex (4-letter uppercase codes)
+species_columns <- grep("^[A-Z]{4}$", colnames(single_species_data), value = TRUE)
+
+# Convert abundance to presence/absence
+single_species_data[species_columns] <- lapply(single_species_data[species_columns], function(x) ifelse(x > 0, 1, 0))
+
+# Function to compare all models and select the best one
+compare_models <- function(species, model_data) {
+  if (!(species %in% names(model_data))) {
+    return(NULL)
+  }
+  
+  # Define model formulas
+  formulas <- list(
+    quadratic_interaction = as.formula(paste0(species, " ~ poly(elevation, 2) * burnYN")),
+    linear_interaction = as.formula(paste0(species, " ~ elevation * burnYN")),
+    quadratic_additive = as.formula(paste0(species, " ~ poly(elevation, 2) + burnYN")),
+    linear_additive = as.formula(paste0(species, " ~ elevation + burnYN"))
+  )
+  
+  # Fit models
+  models <- lapply(formulas, function(f) {
+    tryCatch(glm(f, data = model_data, family = binomial), error = function(e) NULL)
+  })
+  
+  # Compute BIC for each model
+  bics <- sapply(models, function(m) if (!is.null(m)) BIC(m) else NA)
+  
+  # Select the best model (lowest BIC)
+  best_model_name <- names(which.min(bics))
+  best_model <- models[[best_model_name]]
+  
+  # Prediction grid
+  pred_data <- expand.grid(
+    elevation = seq(min(model_data$elevation), max(model_data$elevation), length.out = 100),
+    burnYN = levels(model_data$burnYN)
+  )
+  pred_data$predicted <- predict(best_model, newdata = pred_data, type = "response")
+  
+  return(list(
+    best_model_name = best_model_name,
+    bic_values = bics,
+    pred_data = pred_data,
+    model = best_model
+  ))
+}
+
+# Run models for all species
+species_results <- list()
+
+for (species in species_columns) {
+  cat("Running model for:", species, "\n")
+  species_results[[species]] <- compare_models(species, single_species_data)
+}
+
+# Extract best model results
+best_model_info <- data.frame(
+  species = names(species_results),
+  best_model = sapply(species_results, function(x) if (!is.null(x)) x$best_model_name else NA),
+  BIC_values = sapply(species_results, function(x) if (!is.null(x)) min(x$bic_values, na.rm = TRUE) else NA)
+)
+
+# Save results
+write.csv(best_model_info, "Output/11_SingleSpecies/11_BestModelSelection.csv", row.names = FALSE)
+
+# Save predictions for plotting
+all_predictions <- do.call(rbind, lapply(names(species_results), function(species) {
+  if (!is.null(species_results[[species]]$pred_data)) {
+    data.frame(species = species, species_results[[species]]$pred_data)
+  }
+}))
+
+write.csv(all_predictions, "Output/11_SingleSpecies/11_Predictions.csv", row.names = FALSE)
+
+# Print summary outputs
+print(head(best_model_info))
+print(head(all_predictions))
+
+
+
+
+
+
+#####################slightly working plot code
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Load predictions
+all_predictions <- read.csv("Output/11_SingleSpecies/11_Predictions.csv")
+
+# Load best model selection info
+best_models <- read.csv("Output/11_SingleSpecies/11_BestModelSelection.csv")
+
+# Merge model info into predictions
+all_predictions <- all_predictions %>%
+  left_join(best_models, by = "species") %>%
+  rename(model = best_model) %>%
+  mutate(burnYN = factor(burnYN, levels = c("1", "0"), labels = c("Burned", "Unburned")))
+
+
+#plot 1 burn x elevation interaction 
+plot_burn_interaction <- ggplot(all_predictions %>%
+                                  filter(model %in% c("quadratic_interaction", "linear_interaction"))) +
+  geom_ribbon(aes(x = elevation, ymin = predicted - 0.05, ymax = predicted + 0.05, colour = burnYN), 
+              linetype = "dashed", linewidth = 0.5, alpha = 0.2) +
+  geom_line(aes(x = elevation, y = predicted, colour = burnYN), linewidth = 1) +
+  scale_color_manual(values = c("steelblue3", "tomato3"), name = "") +
+  facet_wrap(~species, scales = "free", ncol = 4) +
+  theme_minimal() +
+  labs(y = "Probability of occurrence", x = "Elevation (metres)") +
+  theme(legend.position = "bottom")
+
+ggsave(plot_burn_interaction, filename = "Output/11_SingleSpecies/11_SingleSpecies_TypeA_BurnInteraction.jpeg", width = 5, height = 3)
+
+#plot 2 burn additive
+plot_burn_additive <- ggplot(all_predictions %>%
+                               filter(model %in% c("quadratic_additive", "linear_additive"),
+                                      !species %in% c("CAVI"))) +
+  geom_ribbon(aes(x = elevation, ymin = predicted - 0.05, ymax = predicted + 0.05, colour = burnYN), 
+              linetype = "dashed", linewidth = 0.5, alpha = 0.2) +
+  geom_line(aes(x = elevation, y = predicted, colour = burnYN), linewidth = 1) +
+  scale_color_manual(values = c("steelblue3", "tomato3"), name = "") +
+  facet_wrap(~species, scales = "free", ncol = 4) +
+  theme_minimal() +
+  labs(y = "Probability of occurrence", x = "Elevation (metres)") +
+  theme(legend.position = "bottom")
+
+ggsave(plot_burn_additive, filename = "Output/11_SingleSpecies/11_SingleSpecies_TypeA_BurnAdditive.jpeg", width = 10, height = 6)
+
+#plot 3 altitude only
+plot_altitude <- ggplot(all_predictions %>%
+                          filter(model == "quadratic_additive")) +
+  geom_ribbon(aes(x = elevation, ymin = predicted - 0.05, ymax = predicted + 0.05), 
+              linetype = "dashed", linewidth = 0.5, alpha = 0.2) +
+  geom_line(aes(x = elevation, y = predicted), linewidth = 1) +
+  facet_wrap(~species, scales = "free", ncol = 4) +
+  theme_minimal() +
+  labs(y = "Probability of occurrence", x = "Elevation (metres)")
+
+ggsave(plot_altitude, filename = "Output/11_SingleSpecies/11_SingleSpecies_TypeA_Altitude.jpeg", width = 10, height = 12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+#####################
+##################### OLD CODE: 
 #STEP 11_SINGLE SPECIES MODELS
 
 #setwd

@@ -39,7 +39,7 @@ mode = function(){
   return(sort(-table(dat))[1])
 }
 
-#1. Take median count per species per location per year----
+#1. Take mean count per species per location per year----
 med <- dat2 %>% 
   mutate(year = year(date_time)) %>% 
   group_by(organization, type, project_id, location, latitude, longitude, year, species) %>% 

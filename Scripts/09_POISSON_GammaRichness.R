@@ -13,7 +13,7 @@ for (q in 1:length(packs)) {
 }
 
 # 2. Read in the required data from previous steps ----
-emda4 <- read.csv("Output/07_cleaned_single_visit_data.csv")
+emda4 <- read.csv("Output/07_cleaned_single_visit_filtered.csv")
 
 #emda1 <- read.csv("Output/07_cleaned_multivisit_data.csv")
 
@@ -111,7 +111,7 @@ names(strata_labels) <- 1:6
 gari_stats$strata_label <- strata_labels[as.character(gari_stats$strata)]
 
 # Save the summary results
-write.csv(gari_stats, "Output/09_POISSON_gamma_richness_6strata.csv", row.names = FALSE)
+write.csv(gari_stats, "Output/09_Gamma/filtered_poisson_gamma_richness_6strata.csv", row.names = FALSE)
 
 # 5. Plot ----
 
@@ -135,12 +135,12 @@ plot_mid_burned <- generate_plot(gari_stats, 5)
 plot_high_burned <- generate_plot(gari_stats, 6)
 
 # Save the plots
-ggsave("Output/09_POISSON_gamma_richness_low_unburned.png", plot = plot_low_unburned, width = 8, height = 6)
-ggsave("Output/09_POISSON_gamma_richness_mid_unburned.png", plot = plot_mid_unburned, width = 8, height = 6)
-ggsave("Output/09_POISSON_gamma_richness_high_unburned.png", plot = plot_high_unburned, width = 8, height = 6)
-ggsave("Output/09_POISSON_gamma_richness_low_burned.png", plot = plot_low_burned, width = 8, height = 6)
-ggsave("Output/09_POISSON_gamma_richness_mid_burned.png", plot = plot_mid_burned, width = 8, height = 6)
-ggsave("Output/09_POISSON_gamma_richness_high_burned.png", plot = plot_high_burned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_low_unburned.png", plot = plot_low_unburned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_mid_unburned.png", plot = plot_mid_unburned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_high_unburned.png", plot = plot_high_unburned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_low_burned.png", plot = plot_low_burned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_mid_burned.png", plot = plot_mid_burned, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_high_burned.png", plot = plot_high_burned, width = 8, height = 6)
 
 ## If there are warnings, investigate 
 summary(gari_stats)
@@ -176,6 +176,18 @@ plot_mid_comparison <- generate_comparative_plot(gari_stats, 2, 5)
 plot_high_comparison <- generate_comparative_plot(gari_stats, 3, 6)
 
 # Save the comparative plots
-ggsave("Output/09_POISSON_gamma_richness_low_comparison.png", plot = plot_low_comparison, width = 8, height = 6)
-ggsave("Output/09_POISSON_gamma_richness_mid_comparison.png", plot = plot_mid_comparison, width = 8, height = 6)
-ggsave("Output/09_POISSON_gamma_richness_high_comparison.png", plot = plot_high_comparison, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_low_comparison.png", plot = plot_low_comparison, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_mid_comparison.png", plot = plot_mid_comparison, width = 8, height = 6)
+ggsave("Output/09_Gamma/POISSON_gamma_richness_high_comparison.png", plot = plot_high_comparison, width = 8, height = 6)
+
+#summarize key results
+key_results <- gari_stats %>%
+  filter(numpc == max(numpc)) %>%
+  select(strata_label, mean_richness, l95, u95)
+print(key_results)
+
+
+
+
+
+
